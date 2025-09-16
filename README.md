@@ -1,12 +1,12 @@
 # Learning-log
-2025/09/12 Morning
+## 2025/09/12 Morning
 Topic: DOM Manipulation and Events with The Odin Project
 
 - Types of web page manipulation possible with JavaScript
 - Realization: Previously, I had an item that I couldn't click on in Python, so I automated the process using JavaScript web page manipulation code, and now I've created something a little familiar.
 - Next up: Tonight, I'll continue studying Revisiting Rock Paper Scissors.
 
-2025/09/16 Morning
+## 2025/09/16 Morning
 Topic: Event Listeners and DOM Updates with JavaScript
 
 Clarified the difference between event listeners and event handlers.
@@ -18,7 +18,7 @@ Realized that combining DOM manipulation with events is the foundation of making
 Next up: Tonight, I’ll continue with Rock Paper Scissors, this time adding event-driven interactions instead of relying only on prompts.
 
 
-2025/09/16 Evening
+## 2025/09/16 Evening
 
 What I Did Today
 
@@ -55,3 +55,27 @@ Next steps
 Add a click event to the added delete button to delete the list item.
 
 Practice applying dynamic styles using CSS classes.
+
+
+## 2025/09/16 Morning
+
+# Shopping List DOM Practice
+
+**Topic:** Event Listeners and DOM Updates
+
+**What I Did:**
+- Prepared starter HTML with minimal CSS, input, button, and empty list.
+- Stored references to `<ul>`, `<input>`, and `<button>` in variables.
+- Created `handleClick` function for button clicks.
+- Retrieved input value and cleared input field.
+- Created `<li>`, `<span>`, `<button>` elements.
+- Set `<span>` textContent to input value and `<button>` textContent to "delete".
+- Appended `<span>` and `<button>` to `<li>`.
+- Added `<li>` to `<ul>`.
+- Attached click event to delete button to remove the `<li>`.
+- Focused input field after adding an item.
+
+**What I Learned:**
+- How to dynamically create and append elements using JS.
+- Difference between event listeners and handlers.
+- Using closures to maintain individual item behavior.
