@@ -99,69 +99,42 @@ Practice applying dynamic styles using CSS classes.
 - Creating a branch on GitHub (`rps-ui`) and proceeding with UI development.
 
 
-## 2025/09/18 Morning 
-DOM Manipulation and Events — The Odin Project
-
+## 2025/09/18 Morning
+# Top Rock-Paper-Scissors
 Overview
 
-Today, I practiced JavaScript DOM manipulation and event handling using the "shopping-list.html" starter file from The Odin Project. The focus was on dynamically creating elements, attaching event listeners, and manipulating the DOM to make an interactive shopping list.
+This morning, I worked on the Top Rock-Paper-Scissors project. The focus was on JavaScript DOM manipulation and event handling to prepare for an interactive UI version of the game.
 
 What I Did
 
-Set up references to HTML elements
+Set up HTML and references
 
-Stored references to the <ul>, <input>, and <button> elements in variables for easier access.
+Prepared the starter HTML with buttons for "Rock", "Paper", and "Scissors".
 
-Created a function to handle button clicks
+Stored references to these buttons in JavaScript variables for easier access.
 
-Defined a function called handleClick to execute whenever the "Add" button is clicked.
+Created event listeners for each button
 
-Retrieve input value and reset input
+Defined a function to handle a click on each button.
 
-Stored the value from the input field in a variable.
+Each click updates a variable representing the player's choice.
 
-Cleared the input field after storing the value.
+Integrated player choice with existing game logic
 
-Created new elements dynamically
+Prepared the system to pass the player's selection into the existing playRound function.
 
-Created <li>, <span>, and <button> elements.
+The function already exists and calculates round results based on player and computer choices.
 
-Added the <span> and <button> as children of the new <li>.
+Kept console logging for debugging
 
-Set content for span and button
-
-Set the <span> text to the value entered by the user.
-
-Set the button text to "delete".
-
-Append new <li> to the list
-
-Added the <li> as a child of the <ul> to display it on the page.
-
-Attach event listener to the delete button
-
-Clicking the delete button removes the corresponding <li> element from the list.
-
-Refocus input field
-
-Used the .focus() method to move the cursor back to the input field, making it ready for the next item.
+Console outputs were used to verify that player choices and round results are correct.
 
 Key Learnings
 
-How to use document.querySelector to select HTML elements.
+How to attach event listeners to buttons and capture user interaction.
 
-The difference between textContent and innerHTML for safely inserting text.
+Connecting UI elements to game logic without using prompts.
 
-Dynamically creating elements with createElement and appending them with appendChild.
+Understanding asynchronous event handling: the function waits for user clicks rather than executing sequentially.
 
-Attaching event listeners to elements for interactive functionality.
-
-Using .focus() to improve user experience in forms.
-
-Next Steps
-
-Continue integrating DOM manipulation with event-driven interactions in other projects.
-
-Explore additional CSS styling for dynamically added elements.
-
-Experiment with other input types and validation for user entries.
+Reinforcing the separation between data (player choice) and logic (round evaluation).
