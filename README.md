@@ -97,3 +97,71 @@ Practice applying dynamic styles using CSS classes.
 - Proceeding with the Rock Paper Scissors UI implementation
 - Using HTML and CSS to create buttons that can be clicked to advance the game.
 - Creating a branch on GitHub (`rps-ui`) and proceeding with UI development.
+
+
+## 2025/09/18 Morning 
+DOM Manipulation and Events — The Odin Project
+
+Overview
+
+Today, I practiced JavaScript DOM manipulation and event handling using the "shopping-list.html" starter file from The Odin Project. The focus was on dynamically creating elements, attaching event listeners, and manipulating the DOM to make an interactive shopping list.
+
+What I Did
+
+Set up references to HTML elements
+
+Stored references to the <ul>, <input>, and <button> elements in variables for easier access.
+
+Created a function to handle button clicks
+
+Defined a function called handleClick to execute whenever the "Add" button is clicked.
+
+Retrieve input value and reset input
+
+Stored the value from the input field in a variable.
+
+Cleared the input field after storing the value.
+
+Created new elements dynamically
+
+Created <li>, <span>, and <button> elements.
+
+Added the <span> and <button> as children of the new <li>.
+
+Set content for span and button
+
+Set the <span> text to the value entered by the user.
+
+Set the button text to "delete".
+
+Append new <li> to the list
+
+Added the <li> as a child of the <ul> to display it on the page.
+
+Attach event listener to the delete button
+
+Clicking the delete button removes the corresponding <li> element from the list.
+
+Refocus input field
+
+Used the .focus() method to move the cursor back to the input field, making it ready for the next item.
+
+Key Learnings
+
+How to use document.querySelector to select HTML elements.
+
+The difference between textContent and innerHTML for safely inserting text.
+
+Dynamically creating elements with createElement and appending them with appendChild.
+
+Attaching event listeners to elements for interactive functionality.
+
+Using .focus() to improve user experience in forms.
+
+Next Steps
+
+Continue integrating DOM manipulation with event-driven interactions in other projects.
+
+Explore additional CSS styling for dynamically added elements.
+
+Experiment with other input types and validation for user entries.
