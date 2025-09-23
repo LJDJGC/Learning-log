@@ -220,3 +220,17 @@ Topic: Rock Paper Scissors UI (DOM Manipulation and Event Listeners)
 - I learned that small spelling errors and script loading order can quickly lead to "element not found" bugs.
 
 Next, I'll test the UI again after making the corrections to ensure it displays correctly.
+
+## 2025/09/24 Morning  
+Topic: Rock Paper Scissors UI – Git, Branch Merge, GitHub Pages Deployment  
+
+- Implemented **UI for Rock-Paper-Scissors** game (start button, score tracking, reset).
+- Fixed issue where final result message disappeared too quickly → added `setTimeout` before reset.
+- Controlled game flow with **disable/enable buttons** until "Start Game" is pressed.
+- Learned how to **merge feature branch (`rps-ui`) into `main`** using `git checkout main` + `git merge rps-ui`.
+- Cleaned up understanding of **committed vs. uncommitted changes** (merge showed "Already up to date" because edits weren’t committed yet).
+- Successfully **pushed changes to GitHub**.
+- Published project on **GitHub Pages** and confirmed live URL:  
+  👉 [Live Demo](https://ljdjgc.github.io/top_rock-paper-scissors/)
+
+Next up: Update README with project description and live preview link.
