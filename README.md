@@ -257,3 +257,23 @@ Next up: Update README with project description and live preview link.
 - Actually created a 16x16 grid. Generate cells and display them in the browser.
 - Implement a mechanism for changing cell color on hover and click.
 - As a finishing touch, make the number of cells freely adjustable.
+
+## 2025/09/25 Morning
+
+Topic: Creating a 16x16 grid div with JavaScript and displaying it with Flexbox
+
+- Preparing a `.container` div in HTML
+- Creating a 16x16 div in `script.js` using `document.createElement` and `appendChild`
+- An error occurred with the initial JS code:
+- `count` in `console.log(myContainer, count);` was undefined → Changed to `i`
+- Corrected `document.body.appendChild(...)` to `myContainer.appendChild(...)`
+- Checking the display with CSS:
+- Setting `display: flex; flex-wrap: wrap; width: 500px;` to `.container`
+- Set `flex: 0 0 calc(100% / 16);` and `aspect-ratio: 1 / 1;` to the `.container div`.
+- 0 height issue:
+- This can be resolved by removing the `height` from the `.container` or by setting the cell to `height: calc(500px / 16);`.
+- Set the background color `lightgray` to ensure the generated div looks correct.
+- Currently, the 16x16 square grid is ready to be displayed using a combination of JS and CSS.
+
+Next step:
+- Add hover color behavior similar to Etch-a-Sketch.
