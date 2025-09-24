@@ -234,3 +234,26 @@ Topic: Rock Paper Scissors UI – Git, Branch Merge, GitHub Pages Deployment
   👉 [Live Demo](https://ljdjgc.github.io/top_rock-paper-scissors/)
 
 Next up: Update README with project description and live preview link.
+
+## 2025/09/24 Evening 
+
+# Etch-a-Sketch Project
+
+- Created a repository on GitHub and confirmed the process of connecting it to a local repository.
+- Learned the basic operations of `git init` → `git remote add origin` → `git branch -M main` → `git push`.
+- Created a README and completed the first commit and push.
+
+- Reviewed the project assignment instructions.
+- The goal was to generate a 16x16 grid using JavaScript.
+- Dynamically added elements using a loop instead of directly arranging divs in HTML.
+- Understood how easily a square can be created using CSS Grid and `aspect-ratio`.
+
+- Organized implementation tips.
+- Created cells using `document.createElement` and `appendChild`.
+- Added cells efficiently using `DocumentFragment`.
+- Confirmed the idea of ​​coloring cells with the `mouseover` event.
+
+## Next Steps
+- Actually created a 16x16 grid. Generate cells and display them in the browser.
+- Implement a mechanism for changing cell color on hover and click.
+- As a finishing touch, make the number of cells freely adjustable.
