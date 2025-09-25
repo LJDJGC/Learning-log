@@ -277,3 +277,32 @@ Topic: Creating a 16x16 grid div with JavaScript and displaying it with Flexbox
 
 Next step:
 - Add hover color behavior similar to Etch-a-Sketch.
+
+## 2025/09/25 Night
+Topic: 16x16 Grid Generation and Hover Effects with Flexbox
+
+Lessons
+
+Used JavaScript to dynamically generate 16x16 div elements without writing HTML.
+
+Using Flexbox's flex-wrap and flex: 0 0 calc(100% / 16) to create a layout with 16 wrapped squares.
+
+Confirmed that gaps and borders would cause the squares to collapse, and achieved a stable display with gap: 0.
+
+Added mouseover event listeners to each generated div and applied a class to create a "trail" effect that changes the background color.
+
+I learned
+
+Executing document.createElement("div") once outside of a loop reuses the same element, resulting in incorrect generation of 256 divs.
+
+Instead of writing classes directly in the HTML, dynamically using classList.add() in JavaScript is necessary for the "leave a trail" mechanism.
+
+Even with Flexbox, care must be taken when handling gaps. You can include them in the calculation formula if necessary.
+
+Next Steps
+
+Combine mousedown / mouseup to allow drawing by dragging the mouse.
+
+Expand the color from a fixed (black) to random or a gradual change in density.
+
+Create a reset button to refresh the entire grid.
