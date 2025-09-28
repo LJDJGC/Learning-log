@@ -333,3 +333,26 @@ Consider changing the cell color from fixed black to a random or selected color.
 I will try extending it to more pen-like behavior, such as "draw only while clicked."
 
 Make the grid size variable (e.g. 16x16 → 32x32).
+
+## 2025/09/29 Morning 
+In today's lesson, we worked through the steps of combining JavaScript and CSS to create an **interactive grid sketchpad**. The basic process was to first create a `.container` in HTML and then create a 16x16 div in JavaScript to create a grid. We maintained the square shape by using `aspect-ratio: 1/1` and managed the color by specifying `background-color` in CSS.
+
+Looking back internally, at first, we realized that all we could see was black lines. We stopped and thoroughly checked the HTML structure, CSS class application, JavaScript variable references, etc. In particular, we noticed that we had incorrectly handled the i and square variables in the for loop, and that a CSS priority issue (a conflict between background and background-color) was preventing the colors from being reflected. We corrected these issues step by step.
+
+By adding !important to the CSS .colored class and confirming that the class was actually added in the browser's developer tools, we were able to complete the color change function on mouseover. In this way, we were able to create a "pen"-like feature that turns black when you trace it with the mouse.
+
+As a next step, we considered adding a button to the top of the screen that would delete the existing grid and generate a new grid with the same total area based on the new grid size entered by the user. Here, we reorganized the flow: obtaining input using prompt, limiting the maximum value (100), clearing using innerHTML = "", dynamically changing grid-template-columns, and again generating divs and attaching events. This resulted in a design that would allow a new sketchpad to be generated without changing the area, even for a 64x64 grid.
+
+Through today's learning, I reaffirmed the importance of not simply writing code, but thoroughly verifying and understanding small elements such as CSS priority, JavaScript variable scope, DOM manipulation, and event firing timing. I found the process of identifying and checking each issue one by one to be extremely effective.
+
+Next time, I plan to implement a button that generates grids based on user input, creating a more flexible and interactive sketchpad.
+
+Today's Achievements
+
+Completed 16x16 grid generation and hover-color change functionality
+
+Understood CSS precedence issues and applied the .colored class
+
+Now I can check class assignments in the developer tools
+
+Refine the design of the dynamically resizable grid generation for next time
