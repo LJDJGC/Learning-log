@@ -390,3 +390,49 @@ If hover isn't working, first check whether an event is attached and whether the
 Operations on innerHTML must be performed outside the loop, or the grid will disappear.
 
 The initial grid and post-reset grid generation processes are easier to manage if they are created as functions.
+
+## 2025/09/30 Morning
+
+This project uses JavaScript and CSS to create a 16x16 square grid, and creates a sketchpad that changes the mass color according to the user's mouse interaction.
+
+Today's study content
+
+Grid creation
+
+Using JavaScript's document.createElement, create a 16x16 div element and place it inside the .container
+
+Grid viewing using Flexbox
+
+CSS display: flex; flex-wrap: wrap; realizes a grid that wraps side by side
+
+Adjusting the square size
+
+The width and height of each square are calculated and set using JS.
+
+Color change during hovering
+
+Initially, set the fixed color purple in CSS
+
+Next, we will consider how to randomly generate RGB values ​​in JavaScript and change the color for each hover.
+
+Issues and prospects for the next episode
+
+To implement the effect of darkening by 10% in stages, we consider a design that maintains the state of each square with dataset.
+
+Confirmed that random colors and gradual darkening cannot be achieved for each interaction with CSS alone
+
+File configuration
+
+index.html … HTML for grid display
+
+style.css … Flexbox Grid, Mass Initial Style
+
+script.js … Grid generation, color change processing by hover event
+
+How to use
+
+Open index.html in your browser
+
+Create a grid of any size with the Reset button
+
+Hovering the mass with the mouse changes color
