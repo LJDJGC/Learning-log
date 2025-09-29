@@ -356,3 +356,37 @@ Understood CSS precedence issues and applied the .colored class
 Now I can check class assignments in the developer tools
 
 Refine the design of the dynamically resizable grid generation for next time
+
+## 2025/09/29 Night
+Topic: JavaScript Grid Generation and Hover Event Verification
+1. Today's Lessons
+
+Creating a system that changes the color of grid cells when hovered using HTML/CSS/JS
+
+Displaying an initial 16x16 grid and allowing it to be resized with a reset button
+
+Creating a div within a for loop and attaching a mouseover event
+
+On reset, deleting existing cells and creating new ones with container.innerHTML = ""
+
+Analyzing the cause of hover issues
+
+Checking whether event listeners are attached correctly
+
+Div size issues when CSS aspect-ratio doesn't work
+
+Tips for isolating the problem:
+
+Check whether events are being fired with console.log
+
+Check the div size and class attachment in DevTools
+
+If aspect-ratio doesn't work, test with a fixed height
+
+2. Today's Lessons Learned and Awareness
+
+If hover isn't working, first check whether an event is attached and whether the div "Does the size of this exist?" is questionable.
+
+Operations on innerHTML must be performed outside the loop, or the grid will disappear.
+
+The initial grid and post-reset grid generation processes are easier to manage if they are created as functions.
