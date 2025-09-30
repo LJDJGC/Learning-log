@@ -436,3 +436,32 @@ Open index.html in your browser
 Create a grid of any size with the Reset button
 
 Hovering the mass with the mouse changes color
+
+## 2025/09/30 Evening
+What I did today
+
+Improved the square interaction function in the Etch-a-Sketch project
+
+Implemented a system where each square changes to a random color when hovered, then gradually darkens after 10 hovers, finally reaching black.
+
+Learned how to save the state of each square (base color and hover count) using dataset.
+
+Introduced logic to generate a random color only the first time using if (!square.dataset.base) and darken the color based on the saved base color thereafter.
+
+I confirmed that confusion between dataset.hover and dataset.hovers was the cause of the bug and understood that it needed to be fixed.
+
+What I learned
+
+Dataset makes it easy to store state in DOM elements.
+
+The importance of separating "first-time processing" from "repeated processing" in event handlers.
+
+To "darken the color," calculating it based on RGB values ​​rather than lowering opacity works better than "darkening the color"
+
+What I'll do next
+
+Modify dataset.hovers to use it correctly.
+
+First hover Sometimes I decide whether to "color it as is" or "darken it by 10%."
+
+Code organization (removing unnecessary console.log and standardizing variable names)
