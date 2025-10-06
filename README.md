@@ -582,3 +582,73 @@ console.log(menu);
 Extending multiplyNumeric to allow arbitrary multiplication
 
 Advanced Object Manipulation Practice
+
+## 2025/10/06 Night
+🕓 Started Studying
+
+While using the command line, I encountered the error "-bash: cd: too many arguments" when using the cd command.
+→ This was caused by a directory name containing a space.
+→ Learned how to enclose the string in quotation marks (" ") or escape spaces with \ .
+
+Example:
+
+cd "my-top_Object Basics-task"
+
+or
+
+cd my-top_Object\ Basics-task
+
+Also practiced renaming directories (using the mv command).
+
+mv "my-top_Object Basics-task" my-top_Object_Basics-task
+
+→ Understand the importance of avoiding spaces in naming.
+
+💻 JavaScript Learning: Understanding Arrays and map()
+
+Topic: "Map to Names"
+
+let john = { name: "John", age: 25 };
+let pete = { name: "Pete", age: 30 };
+let mary = { name: "Mary", age: 28 };
+let users = [ john, pete, mary ];
+let names = users.map(item => item.name);
+alert(names); // John, Pete, Mary
+
+Learning Points
+
+map() is a method that converts an array into another form and returns a new array.
+
+The callback function item => item.name is a conversion rule that extracts only the name property from each object.
+
+item => item.name is an abbreviation for:
+
+function(item) {
+return item.name;
+}
+
+Understand the difference between users.name and item.name:
+
+users refers to the entire array.
+
+An item is the single element (object) currently being processed.
+
+🧠 Deepening Understanding
+
+Consider how map() works in terms of humans:
+
+"Extract only the name (name) from each person (item) in a list and create a new list of names."
+
+✅ Today's Achievements
+
+Learned basic Bash file operations and directory naming rules.
+
+Learned how to correctly use JavaScript's map() method.
+
+Understood the structure and shorthand notation of arrow functions.
+
+⏭ Next Schedule (Proposal)
+
+Practice using for...of to mimic the behavior of map().
+
+Expand your understanding by learning about other array methods such as filter() and reduce().
