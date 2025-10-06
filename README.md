@@ -652,3 +652,69 @@ Understood the structure and shorthand notation of arrow functions.
 Practice using for...of to mimic the behavior of map().
 
 Expand your understanding by learning about other array methods such as filter() and reduce().
+
+## 2025/10/07 Morning
+Learning Content
+
+This morning, we focused on JavaScript and practiced object and array manipulation.
+
+Mapping an object array to another array
+
+Creating a fullName from name and surname
+
+Using map and arrow functions
+
+Understanding why () is used around {}
+
+let usersMapped = users.map(user => ({
+fullName: `${user.name} ${user.surname}`,
+id: user.id
+}));
+
+Sorting array objects by age
+
+Using the sort method
+
+Sort in ascending order using the comparison function (a, b) => a.age - b.age
+
+function sortByAge(arr) {
+arr.sort((a, b) => a.age - b.age);
+}
+
+Calculating the average age
+
+Learn about both for loops and reduce
+
+Confirming concise syntax using reduce
+
+function getAverageAge(users) {
+return users.reduce((sum, user) => sum + user.age, 0) / users.length;
+}
+
+Creating a keyed object from an array
+
+id Create an object using the key.
+
+Array → Object Conversion Using Reduce
+
+function groupById(arr) {
+return arr.reduce((acc, user) => {
+acc[user.id] = user;
+return acc;
+}, {});
+}
+
+Learning Review
+
+I learned how to use the {} and () arrow functions.
+
+I confirmed the basic usage of sort and reduce.
+
+I'm now familiar with combining array and object operations.
+
+This knowledge will be useful for data manipulation and data formatting from the server.
+
+Thoughts for the Day
+
+You can get a feel for array and object operations by practicing them multiple times.
+Reduce may seem difficult at first, but it's a powerful tool once you get used to it.
