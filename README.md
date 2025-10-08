@@ -718,3 +718,149 @@ Thoughts for the Day
 
 You can get a feel for array and object operations by practicing them multiple times.
 Reduce may seem difficult at first, but it's a powerful tool once you get used to it.
+
+## 2025/10/07 Night
+🌙 What I learned
+
+Understanding object generation using reduce()
+
+function groupById(array) {
+return array.reduce((obj, value) => {
+obj[value.id] = value;
+return obj;
+}, {});
+}
+
+reduce is a method for "combining an array into a single value (in this case, an object)."
+
+First argument: Callback function (receives the accumulated value obj and the current element value).
+
+Second argument: Initial value {} (initially an empty object).
+
+Each element's id is used as a key, and the corresponding object is stored as the value.
+
+The final object is obtained in the format { id1: {...}, id2: {...}, ... }.
+
+💡 What I learned
+
+reduce() is a powerful function that can convert an array into any form (number, string, object, etc.).
+
+Reconfirming the meaning of return:
+
+Return is a "door to bring results out of the function."
+
+Without return, the function returns undefined.
+
+Example:
+
+const add = function(x, y) {
+return x + y;
+};
+console.log(add(2, 3)); // 5
+
+If you omit return, the result will be undefined and not passed anywhere.
+
+🧠 Today's Realization
+
+Even if the code works, it's meaningless if you don't consider how to handle the results.
+
+The more abstract a function is, like reduce(), the quicker it's to understand it by going through it step by step.
+
+From tomorrow onwards, I'd like to delve deeper into "applications of reduce" and "differences from map/filter."
+
+⏭ Next Episode Preview
+
+Practice advanced patterns of reduce()
+
+Creating sums, maximum values, and count objects in arrays, etc.
+
+Create a comparison table of map, filter, and reduce to clarify their usage.
+
+## 2025/10/08 Morning 
+🚀 Learning Topic: Coding Test Preparation (Basic Algorithms and JavaScript Functions)
+🎯 Materials and Platforms Used
+LeetCode (Easy): Two Sum Problem
+
+JavaScript Function Assignment: subtract(), sum(), multiply()
+
+🧠 Main Learning Content and Outcomes
+1. Studying the LeetCode "Two Sum" Problem
+Item Details Algorithm Learned
+Goal: Return two indices from an array whose sum is target. O(N) solution using a hash map (Dictionary)
+Learned Points: Since I found it difficult to solve the O(N)
+2
+
+
+On my own, I used the solution as a reference. I learned a pattern for storing array elements as keys and indexes as values ​​in a hash map, and then quickly (O(1)) searching for the required partner (target - num).
+Technical Elements: Understand the role of Python's enumerate function (simultaneously obtaining index and element).
+2. JavaScript Function Assignment Work
+Function Name Achievement Lessons Learned/Improved
+subtract() Completed (Correct) I learned that in concise functions, it is preferable to directly return the calculation result without using intermediate variables.
+sum() Completed (Correct) While using the for...of loop to perform the summation is correct, I learned a more concise and versatile way to write it using the standard JavaScript function Array.prototype.reduce().
+multiply() Initial Value Challenge I understood that when calculating all products, the initial value of the accumulator variable must be set to 1 (the multiplicative identity) rather than 0.
+✅ Next Learning Action
+I will register the "O(N) Search Pattern Using a Hash Map" I learned today in Anki and begin active recall.
+
+To fully understand JavaScript's reduce() method, I will actively use it in other assignments, including multiplication calculations (multiply).
+
+For the next LeetCode problem, first take 30 minutes to think about it on your own and be conscious of using hash maps.
+
+## 2025/10/08 Night
+
+📝 Overview
+Today, we learned about basic JavaScript function implementation and the accompanying fundamentals of test-driven development (TDD). Practice focused on function arguments, variable scope, operators, and string and array manipulation.
+
+🚀 Implemented Functions
+multiply(numbers)
+
+Objective: Takes an array of numbers and multiplies all elements.
+
+Learned:
+
+The need to set the initial value of the product to 1 instead of 0.
+
+Iterating over arrays using the for...of loop.
+
+Writing concise code using the *= compound assignment operator.
+
+power(x, y)
+
+Objective: Returns the result of multiplying the base x by the exponent y.
+
+Learned:
+
+How to use JavaScript's built-in exponentiation operator, **.
+
+Directly returning the result allows you to omit unnecessary variables.
+
+factorial(number)
+
+Objective: Calculates the factorial of a given number.
+
+What I learned:
+
+The correct way to write update expressions (i-- and --i) in for loop syntax.
+
+The correct syntax for the *= compound assignment operator and the importance of reassigning the calculation result to a variable.
+
+palindromes(string)
+
+Objective: Determine whether a given string is a palindrome.
+
+What I learned:
+
+The importance of limiting function arguments to only the necessary information.
+
+How to clean up strings using regular expressions (RegExp) to ignore punctuation and whitespace.
+
+A series of steps to convert a string into an array (split), manipulate it (reverse), and reconvert it (join).
+
+🔧 Challenges and Solutions
+Syntax Errors: I encountered syntax errors in the for loop update expression (--1) and the compound assignment operator (=*). This was a good opportunity to deepen my understanding of basic JavaScript grammar.
+
+Logic error: Fixed a logic error in the factorial function, where the calculation result was not correctly assigned back to a variable.
+
+⏭️ Carrying on to next time
+Complete the implementation of the palindromes function.
+
+Continuing with test-driven development, enable the remaining tests in calculator.spec.js one by one and complete the corresponding functions.
