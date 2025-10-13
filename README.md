@@ -864,3 +864,176 @@ Logic error: Fixed a logic error in the factorial function, where the calculatio
 Complete the implementation of the palindromes function.
 
 Continuing with test-driven development, enable the remaining tests in calculator.spec.js one by one and complete the corresponding functions.
+
+## 2025/10/09 Morning
+Palindrome Checker: An Exercise in Algorithmic Efficiency
+Overview
+This repository features a concise JavaScript function, palindromes, designed to determine if a given string is a palindrome.
+
+A palindrome is a sequence of characters that reads the same forward and backward. The function is engineered to be robust, meaning it automatically handles variations in case, punctuation, and spacing, focusing only on the alphanumeric characters for the check.
+
+The JavaScript Implementation
+This solution leverages powerful built-in JavaScript methods to achieve a clean and readable implementation.
+
+JavaScript
+
+const palindromes = function (str) {
+    // 1. Clean and normalize the string: convert to lowercase and remove all non-alphanumeric characters.
+    // The regular expression /[^a-z0-9]/g targets and removes punctuation and spaces globally.
+    const cleanedStr = str.toLowerCase().replace(/[^a-z0-9]/g, "");
+
+    // 2. Reverse the cleaned string using the split-reverse-join pattern.
+    const reversedStr = cleanedStr.split("").reverse().join("");
+
+    // 3. Compare the original cleaned string with the reversed string.
+    return cleanedStr === reversedStr;
+};
+Algorithmic Analysis (Inspired by LeetCode) ⏱️
+As we practice algorithms, understanding Time Complexity is crucial. This solution has a favorable performance profile:
+
+Operation	Time Complexity	Notes
+str.toLowerCase().replace()	O(N)	Iterates through the string once to clean it.
+cleanedStr.split('')	O(N)	Creates an array from the string.
+.reverse()	O(N)	Reverses the array; the most time-consuming step.
+.join('')	O(N)	Joins the array back into a string.
+Comparison (===)	O(N)	Compares the two strings character by character.
+The overall Time Complexity is O(N) (Linear Time), where N is the length of the input string. This is considered very efficient, as the execution time grows linearly with the size of the input.
+
+Examples
+Input (str)	Output	Explanation
+'racecar'	true	Simple seven-letter palindrome.
+'tacos'	false	Not a palindrome.
+'A car, a man, a maraca.'	true	Cleans to "acaramanamaraca".
+'Lid off a daffodil.'	true	Cleans to "lidoffadaffodil".
+Next Steps / Reflection
+The Odin Project Focus: This exercise reinforced the practical use of regular expressions and efficient string manipulation in JavaScript.
+
+LeetCode Challenge: While this solution is O(N), a classic variation is the Two-Pointer approach, which can solve the problem in-place (without creating a second reversed string) to achieve O(N) Time Complexity with O(1) or minimal O(N) Space Complexity. This is a potential optimization to explore.
+
+## 2025/10/09 Night
+
+What I Learned
+💻 JavaScript Basics Practice
+Reviewed the concepts of function arguments and local variables.
+
+Started implementing a function that returns the Fibonacci sequence (Practice Problem 14).
+
+Progress/Lessons Learned
+Note that arguments are used to receive values ​​from outside the function, and that **.length** cannot be used.
+
+Understood that implementing the Fibonacci sequence requires preparing two variables, the "previous number" and the "previous number," and updating them within a **loop (iterative process)**.
+
+The challenges were setting the initial values ​​(1 and 1) and designing the number of iterations.
+
+Next Task
+Used a for loop to complete the **"memorize and update values"** process for the Fibonacci sequence.
+
+Consider conditional branching that appropriately handles the first and second base numbers (1 and 1).
+
+## 2025/10/10 Morning
+
+💡 Today's Task
+1. Palindrome Number
+Problem: Given an integer x, implement a function that returns true if x is a palindrome (reads the same left or right), and false otherwise.
+
+Solution Approach
+For this problem, we considered two approaches: a string conversion approach and an approach using only integer arithmetic.
+
+Approach Description Features
+String Conversion: Convert the number to a string, reverse it using split(), reverse(), and join(), and then compare it to the original string. This is the simplest and most intuitive implementation.
+Integer Arithmetic: After excluding negative numbers, use the modulus operator (% 10) and division (/ 10) in a loop to reverse the number itself. This is memory-efficient and the optimal solution, satisfying the constraint "solve without converting to a string" stated in the problem's appendix.
+Implementation Code Example (Integer Arithmetic Approach)
+JavaScript
+
+/**
+* @param {number} x
+* @return {boolean}
+*/
+var isPalindrome = function(x) {
+if (x < 0) {
+return false;
+}
+
+let reversed = 0;
+let original = x;
+
+while (x > 0) {
+/ 1. Get the last digit: x % 10
+/ 2. Multiply the existing reversed number by 10 and add the new digit.
+reversed = (reversed * 10) + (x % 10);
+
+/ 3. Remove the last digit.
+x = Math.floor(x / 10);
+}
+
+return reversed === original;
+};
+2. Fibonacci Sequence
+Problem: Create a function fibonacci(number) that returns the Nth member of the Fibonacci sequence. (Number sequence used: 1,1,2,3,5,8,...)
+
+Solution Approach
+We used an iterative approach, using an array (data) to store the number sequence and continuously calculating new members through a loop.
+
+Key Implementation Points
+Initial Value Setup: Set the first two values ​​with let data = [1, 1];
+
+Exception Handling: If number is 1 or 2, return the initial value without performing any calculations.
+
+Loop Condition: Set the loop starting index i = 2, and repeat the calculation until the length of the array becomes N (i < number), completing the process with the correct number of iterations.
+
+Implementation Code
+JavaScript
+
+const fibonacci = function(number) {
+let data = [1, 1];
+
+/ Process the first (data[0]) or second (data[1]) element.
+if (number <= 2) {
+return data[number - 1];
+}
+
+/ Start at i=2 and repeat until the array length is 'number'.
+for (let i = 2; i < number; i++) {
+/ Add the previous two elements.
+const result = data[data.length - 1] + data[data.length - 2];
+
+/ Add the new Fibonacci number to the end of the array.
+data.push(result);
+}
+
+/ Return the last element of the array (the Nth member).
+return data[data.length - 1];
+};
+
+## 2025/10/14 Morning
+🎯 Goals
+Understand the algorithm for finding the longest common prefix
+
+Understand and practice JavaScript array manipulation methods (reduce, map)
+
+💻 Exercises and Concepts
+1. Longest Common Link (Longest Common Prefix)
+Topic: Business
+Difficulty: Easy
+Related Methods: Array.prototype.reduce(), String.prototype.slice()
+📝 Learning Points
+Processing using reduce(): Learn an approach that processes array elements one by one and carries over the result of the previous processing (a temporary common prefix) to the next processing.
+
+Efficient Comparison: Understand how to efficiently calculate the length of a common part by comparing string indexes one by one using a while loop.
+
+Basic Concept: Using the first string as a base, identify the longest common prefix by comparing it with other strings and keeping only the common parts.
+
+2. Get the title!
+Topic: Array Manipulation
+Difficulty: Easy
+Related Method: Array.prototype.map()
+📝 Learning Points
+The Role of map(): Learn the basic purpose of the map() method: "Transform each element of an array and create a new array with the results."
+
+Extracting Object Properties: Demonstrate the standard technique of bulk extracting only the values ​​of a specific property (book.title) from an array of objects.
+
+Arrow Functions (=>): Understand how arrow functions (especially the shorthand notation) can be used as callback functions for higher-order functions like map(), and how their argument (book) refers to an element of the array.
+
+🚀 Assignment for Next Time: Practice solving these problems independently using a for loop without using reduce() or map().
+
+Review other built-in methods for array manipulation, such as filter() and forEach().
