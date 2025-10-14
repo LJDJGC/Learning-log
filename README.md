@@ -1037,3 +1037,36 @@ Arrow Functions (=>): Understand how arrow functions (especially the shorthand n
 🚀 Assignment for Next Time: Practice solving these problems independently using a for loop without using reduce() or map().
 
 Review other built-in methods for array manipulation, such as filter() and forEach().
+
+## 2025/10/14 Night
+# My Top JavaScript Exercises (Completed)
+
+# Overview
+
+This repository contains a series of exercises I worked on to solidify my JavaScript foundation and provide intensive practice with array methods (e.g., `map`, `filter`, `reduce`).
+
+I completed all exercises and learned how to implement each function.
+
+# Key Aspects Completed
+
+Through this series, I particularly mastered the following concepts and techniques:
+
+- **Basic data types and operations**
+- **Conditional branching and looping**
+- **Built-in JavaScript array methods** (e.g., `reduce`, `map`, `filter`, `forEach`)
+- **Manipulating objects and properties**
+- **Separating logic with helper functions**
+- **Calculating the current year and age using the `Date` object** (especially the final exercise)
+
+# Highlights from the Final Exercise
+
+In the final exercise, "Finding the Oldest Thing," I applied the following knowledge:
+
+1. **Creating a Helper Function:** Define a function that accurately calculates a person's age (lifespan), regardless of whether they are deceased or alive.
+2. **Applying the `reduce` Method:** Implement logic that traverses the entire array, stores the comparison results in an accumulator, and finally returns the oldest person object.
+
+# Future Plans
+
+Building on this foundation, we plan to move on to more complex projects and the next learning topic (e.g., DOM manipulation).
+
+--
