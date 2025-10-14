@@ -1070,3 +1070,50 @@ In the final exercise, "Finding the Oldest Thing," I applied the following knowl
 Building on this foundation, we plan to move on to more complex projects and the next learning topic (e.g., DOM manipulation).
 
 --
+
+## 2025/10/15
+Calculator Project
+Overview
+This project is a web calculator being developed as the final assignment of The Odin Project Foundations. It aims to implement a user-friendly interface and accurate calculation logic.
+
+Tech Stack
+HTML5
+
+CSS3
+
+JavaScript (ES6+)
+
+🧠 Today's Learning and Technical Work
+Before starting work on the project, we reviewed basic data structures and algorithms.
+
+LeetCode 20. Valid Parentheses Solved
+Today, we tackled a popular LeetCode problem to gain practical experience using the stack data structure.
+
+Topic: Nesting parentheses and checking for correspondence using a stack (LIFO: Last-In, First-Out).
+
+Learned:
+
+Applying stacks: We learned a typical use of stacks: pushing an open parenthesis, then popping an element from the stack when a closing parenthesis is encountered to check for correspondence.
+
+Using a hash map: Using a mapping (hash map/object) to manage pairs of closing and opening parentheses improved the readability and efficiency of the code.
+
+Implementing the Core Logic of the Calculator Project
+We started by implementing the application's core calculation logic.
+
+Implemented Features (Core Logic)
+The following functions for basic arithmetic operations were created in a JavaScript file and confirmed to work correctly in the browser console.
+
+add(a, b): Addition
+
+subtract(a, b): Subtraction
+
+multiply(a, b): Multiplication
+
+divide(a, b): Division
+
+🔜 Next Steps
+Building the UI with HTML/CSS: Define the structure of the calculator's buttons and display.
+
+Operator Handling: Implement logic to manage the display state and the current operator.
+
+DOM Integration: Integrate JavaScript and HTML/CSS to perform calculations in response to button clicks and display the results on the screen.
