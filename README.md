@@ -1071,7 +1071,7 @@ Building on this foundation, we plan to move on to more complex projects and the
 
 --
 
-## 2025/10/15
+## 2025/10/15 Morning
 Calculator Project
 Overview
 This project is a web calculator being developed as the final assignment of The Odin Project Foundations. It aims to implement a user-friendly interface and accurate calculation logic.
@@ -1117,3 +1117,56 @@ Building the UI with HTML/CSS: Define the structure of the calculator's buttons 
 Operator Handling: Implement logic to manage the display state and the current operator.
 
 DOM Integration: Integrate JavaScript and HTML/CSS to perform calculations in response to button clicks and display the results on the screen.
+
+## 2025/10/15 Night
+📚 Learning Topic
+Implementing Basic Calculator Functions Using JavaScript
+
+💡 Goals Accomplished
+Implemented the four arithmetic operations (addition, subtraction, multiplication, and division) using JavaScript functions.
+
+Learned how to test functions using the browser console.
+
+Understood and implemented how to manage the basic elements that make up calculator operations (number 1, operator, number 2) as variables.
+
+💻 Implementation Code and Contents
+1. Arithmetic Functions
+Implemented the four basic functions required for a calculator. Learned how to return results using the return statement.
+
+JavaScript
+
+// Addition
+function add(a, b) {
+return a + b;
+}
+
+// Subtraction
+function subtract(a, b) {
+return a - b;
+}
+
+// Multiplication
+function multiply(a, b) {
+return a * b;
+}
+
+// Division
+function divide(a, b) {
+return a / b;
+}
+
+// Console test example:
+// console.log(add(5, 3)); // 8
+// console.log(multiply(6, 7)); // 42
+2. Managing Calculation Element Variables
+The three elements that make up a basic calculator operation (e.g., 3 + 5) are stored as variables. We reaffirmed the use of quotation marks ('') for elements that should be treated as strings.
+
+JavaScript
+
+let operand1 = 3; // First number
+let operand2 = 5; // Next number
+let operator = '+'; // Operator (stored as a string)
+⏭️ Next Step (TODO)
+[ ] Create logic (if/else or switch statements) that calls the appropriate arithmetic functions using the three stored variables (operand1, operator, operand2).
+
+[ ] Add safe handling (e.g., returning an error message) to the division function (divide) when dividing by zero (when b is 0).
