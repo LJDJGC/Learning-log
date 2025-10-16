@@ -1170,3 +1170,74 @@ let operator = '+'; // Operator (stored as a string)
 [ ] Create logic (if/else or switch statements) that calls the appropriate arithmetic functions using the three stored variables (operand1, operator, operand2).
 
 [ ] Add safe handling (e.g., returning an error message) to the division function (divide) when dividing by zero (when b is 0).
+
+## 2025/10/16 Night
+💡 Theme
+Implementing the Core Logic of a Calculator Using JavaScript
+
+✅ What I Accomplished
+I completed the functions for performing the four arithmetic operations (addition, subtraction, multiplication, and division), which are the core functionality of a calculator, and the main calculation logic that integrates and utilizes them.
+
+Defining Basic Arithmetic Functions
+
+I defined four functions: add(a, b), subtract(a, b), multiply(a, b), and divide(a, b).
+
+Comparing Operators and Calling Functions
+
+I implemented the operate(op1, op2, op) function, which selects and executes the appropriate arithmetic function based on the input operator (+, -, *, /).
+
+In particular, I correctly used the comparison operator (===) for conditional branching and established logic to determine the operator.
+
+Understanding the Role and Scope of Variables
+
+I understood the need to store the calculation elements (operand1, operand2, operator) in variables and that they serve as initial values ​​for testing.
+
+Understanding and applying safe and clean function design (scoping) by declaring calculateResult as a local variable within the operate function and returning its value with return .
+
+💻 Today's Final Code (Core Logic)
+JavaScript
+
+function add(a, b) {
+return a + b;
+}
+
+function subtract(a, b) {
+return a - b;
+}
+
+function multiply(a, b) {
+return a * b;
+}
+
+function divide(a, b) {
+return a / b;
+}
+
+let operand1 = 3;
+let operand2 = 5;
+let operator = '+';
+
+function operate(op1, op2, op) {
+let calculateResult; // Store the calculation result in a local variable
+
+if (op === '+') {
+calculateResult = add(op1, op2);
+} else if (op === '-') {
+calculateResult = subtract(op1, op2);
+} else if (op === '*') {
+calculateResult = multiply(op1, op2);
+} else if (op === '/') {
+calculateResult = divide(op1, op2);
+
+return calculateResult; // Return the result
+}
+
+let result = operate(operand1, operand2, operator);
+
+console.log(result); // Output: 8
+⏭️ Next Step
+Add a process to the operate function to detect division by zero (when operand2 is 0) and return an error message to increase the robustness of the code.
+
+Create HTML/CSS and prepare the buttons and display area on the screen.
+
+Learn DOM manipulation in JavaScript and implement logic to dynamically update the values ​​of operand1 and operator in response to button click events.
