@@ -1241,3 +1241,61 @@ Add a process to the operate function to detect division by zero (when operand2 
 Create HTML/CSS and prepare the buttons and display area on the screen.
 
 Learn DOM manipulation in JavaScript and implement logic to dynamically update the values ​​of operand1 and operator in response to button click events.
+
+## 2025/10/17 Morning
+
+🎯 Goals
+
+Build a prototype calculator that performs basic arithmetic operations and establish the foundation for the logic and layout.
+
+🚀 Accomplishments
+
+1. Defining JavaScript Logic
+
+Defined the basic arithmetic functions that form the core of the calculator and the main functions that integrate them, and completed operational testing in the browser console.
+
+Functions defined:
+
+add(a, b): Addition
+
+subtract(a, b): Subtraction
+
+multiply(a, b): Multiplication
+
+divide(a, b): Division (including exception handling for division by zero)
+
+operate(op, num1, num2): Integration function that calls the appropriate function depending on the operator.
+
+2. Creating and Improving the HTML Layout
+
+Created the basic HTML structure for the calculator, including all required elements.
+
+Elements: Display, number buttons (0-9), decimal point, arithmetic operators (+, -, ×, ÷), equals (=), and clear (C) button.
+
+Improvements: CSS Grid was used to create a standard calculator layout (four-column layout).
+
+Feature Identifiers: Each button was given a data-action attribute (number, operator, equals, clear) in preparation for JavaScript implementation in the next step.
+
+3. Initial Variable Definition
+
+Global variables were defined to manage the calculator's state.
+
+firstNumber: First number
+
+operator: Selected operator
+
+secondNumber: Second number
+
+displayValue: Current value displayed on the display
+
+✅ Next Step (TODO)
+
+Event Handling Implementation: Set up click event listeners for all buttons.
+
+Display Update Logic: Store user input in the firstNumber, operator, and secondNumber variables and implement logic to update the display in real time accordingly.
+
+Calculation execution: When the equals (=) button is pressed, the operate function is called and the result is displayed on the screen.
+
+Support for consecutive calculations: The calculation result can be used as the firstNumber for the next calculation.
+
+The logic defined today is working properly in the console. Next, we'll work on integrating it with the UI.
