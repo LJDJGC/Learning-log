@@ -1339,3 +1339,31 @@ The goal is to create a functional calculator using the basics of web developmen
 
 - [The Odin Project: Calculator Assignment]
 - [MDN Web Docs]
+
+## 2025/10/21 Morning
+🗓️ What I learned
+I refined the JavaScript logic for the calculator project's main functions and built a foundation for basic user interaction.
+
+Improved number button processing (0-9) and decimal point (.):
+
+Implemented logic to prevent duplicate zeros when entering numbers (overwriting a single zero and concatenating zeros).
+
+Implemented conditional processing (using the includes() method) to prevent double entry of decimal points (.).
+
+Building the logic foundation for operator buttons (+, -, ×, ÷):
+
+Implemented a process to save the current displayed value as the first operand when an operator button is pressed.
+
+Saved the selected operator in **operatorValue**.
+
+Set the **waitingForNewInput** flag to reset the screen upon the next number entry and transition to a state where the second operand can be entered.
+
+🚧 Main Issues Resolved
+I understood the difference between += (concatenation) and = (assignment/overwrite) when the number or operator button is pressed, and modified the implementation.
+
+I understood the need for global state management variables (firstOperand, operatorValue, waitingForNewInput) to store the calculated value and operator when processing operators, and added them to the code.
+
+⏭️ Next Steps
+Modifying the Event Listener: Change the current logic in allButtons.forEach to button.addEventListener('click', ...) so that the logic is executed when the button is clicked.
+
+Performing the Calculation (=): Implemented the logic for the equals button, calling the operate function using firstOperand, operatorValue, and the current display value (second term), and displaying the calculation result.
