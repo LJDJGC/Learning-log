@@ -1299,3 +1299,43 @@ Calculation execution: When the equals (=) button is pressed, the operate functi
 Support for consecutive calculations: The calculation result can be used as the firstNumber for the next calculation.
 
 The logic defined today is working properly in the console. Next, we'll work on integrating it with the UI.
+
+
+
+## 2025/10/20 Night
+
+# 🧑‍💻 The Odin Project: Calculator
+
+This is the learning repository for the "Calculator" project, a challenge in [The Odin Project].
+The goal is to create a functional calculator using the basics of web development (HTML, CSS, JavaScript).
+
+# 🎯 Project Goals
+
+1. Implement basic arithmetic operations (addition, subtraction, multiplication, and division).
+2. Create a user interface (buttons, display) in the browser.
+3. Implement logic to manipulate the DOM using JavaScript, perform calculations based on user input, and display the results.
+
+# 🚀 Current Progress
+
+| Phase | Status | Completed Tasks |
+| :--- | :--- | :--- |
+| **I. Initial Setup** | ✅ Completed | - Created basic HTML (buttons, display) structure. |
+| **II. Calculation Logic** | ✅ Completed | - Defined arithmetic functions (`add`, `subtract`, `multiply`, `divide`). |
+| **III. Core Functions** | ✅ Completed | - Defined the `operate` function, including a divide-by-zero check, and fixed a bug. |
+| **IV. Input Processing** | ✅ Completed | - Defined the screen state management variable `currentDisplayValue`. |
+| **V. Event Processing** | ✅ Completed | - Implemented the `inputDigit` function to process **continuous input** when clicking a number button, and reflected it on the screen. |
+
+## 📅 Future Learning Plan
+
+| Date | Planned Tasks |
+| :--- | :--- |
+| 2025/10/21 | Implemented input processing for the **decimal point (`.`)**. (Prevents double input) |
+| | Implement the functionality of the **Clear (`C`)** button. |
+| | Implement the basic click processing for **operators (`+`, `-`, `×`, `÷`)**. (Save the first operand and operator) |
+| 2025/10/22 | Completed calculation processing when clicking an operator and calculation processing for **equal (`=`)**. |
+| 2025/10/23 | Design (CSS) and implementation of display digit limit. |
+
+## 🔗 References
+
+- [The Odin Project: Calculator Assignment]
+- [MDN Web Docs]
