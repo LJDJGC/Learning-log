@@ -1367,3 +1367,26 @@ I understood the need for global state management variables (firstOperand, opera
 Modifying the Event Listener: Change the current logic in allButtons.forEach to button.addEventListener('click', ...) so that the logic is executed when the button is clicked.
 
 Performing the Calculation (=): Implemented the logic for the equals button, calling the operate function using firstOperand, operatorValue, and the current display value (second term), and displaying the calculation result.
+
+## 2025/10/21 Night
+Summary of Accomplishments
+The primary focus of tonight's session was refactoring the calculator's event handling mechanism to ensure all button actions are correctly processed upon a click event. Key logic for handling number inputs and basic operator storage was established.
+
+Refactored Event Handling: The redundant and error-prone structure (which executed logic immediately upon script load) was replaced. All button logic is now properly nested within a single button.addEventListener('click', ...) callback function for each button.
+
+Centralized Number/Digit Input: Consolidated the processing for all number buttons (0-9) by correctly calling the inputDigit(buttonValue) function within the single if block, making the code much cleaner.
+
+Implemented Operator Logic: Implemented the basic logic for handling operator button clicks (+, -, ×, ÷), ensuring the following sequence:
+
+The current display value is stored in the global firstOperand.
+
+The selected operator is stored in operatorValue.
+
+waitingForNewInput is set to true, preparing the display for the second number.
+
+Next Steps (To-Do)
+Implement the Equals (=) Logic: Complete the functionality for the = button to perform the calculation using operate(firstOperand, secondOperand, operatorValue).
+
+Implement Clear (C) Logic: Reset all state variables (currentDisplayValue, firstOperand, operatorValue, waitingForNewInput).
+
+Refine Input Functions: Integrate decimal point (.) and waitingForNewInput handling more robustly within the inputDigit function.
