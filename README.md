@@ -1390,3 +1390,41 @@ Implement the Equals (=) Logic: Complete the functionality for the = button to p
 Implement Clear (C) Logic: Reset all state variables (currentDisplayValue, firstOperand, operatorValue, waitingForNewInput).
 
 Refine Input Functions: Integrate decimal point (.) and waitingForNewInput handling more robustly within the inputDigit function.
+
+## 2025/10/22 Morning
+
+Today's session focused on integrating the core calculation logic into the calculator's state management, addressing several critical functionalities and bug fixes as requested.
+
+🎯 Key Accomplishments and Focus Areas
+
+The main goal was to finalize the functions responsible for full calculation flow (=, Clear, and continuous operations).
+
+Core Functions (add, subtract, etc.): These remain stable.
+
+operate Function: Identified a bug where the Zero Division check was performed after the division. This has been noted for immediate correction to ensure the error handling precedes the potentially crashing operation.
+
+State Management: Variables like firstOperand, operatorValue, and waitingForNewInput are correctly defined.
+
+Incomplete Logic: The initial implementation of handleEquals(), handleOperator(), and updateDisplay() was reviewed and found to be incomplete, specifically missing:
+
+The actual call to operate() within handleEquals().
+
+The logic for chained operations (e.g., 12 + 7 - 1), which requires immediate calculation and result preservation upon pressing a second operator.
+
+Robust rounding/precision logic within updateDisplay().
+
+Full implementation of the Zero Division Error flow (displaying the message and resetting state).
+
+🚧 Next Steps
+
+The next session will involve the final implementation of the complex logic identified during the review:
+
+Refactor the operate function for correct Zero Division precedence.
+
+Implement the complete handleOperator logic to enable seamless continuous calculations.
+
+Finalize handleEquals to correctly conclude the calculation and reset the necessary state.
+
+Complete the updateDisplay function, including result rounding and displaying the sarcastic error message for zero division.
+
+Connect all functions to the HTML event listeners using the provided suggestions (especially mapping button IDs to operator symbols).
