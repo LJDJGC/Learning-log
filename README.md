@@ -1464,3 +1464,42 @@ The development of this calculator focused on:
 1.  Clone this repository.
 2.  Open the `index.html` file (or the main HTML file) in your web browser.
 3.  The calculator interface should appear, and you can begin testing the functions.
+
+## 2025/10/23 Morning
+
+Project: Basic Calculator App
+This project implements the core functionality of a basic desktop calculator using HTML, CSS (implied, for structure), and JavaScript. The goal is to manage the calculator's state (operands, operator, display value) and handle complex operational sequences, such as continuous calculations and error handling.
+
+🎯 Current Goals Achieved:
+Core Arithmetic Functions: Implemented functions for add, subtract, multiply, and divide.
+
+operate() Function: A central function that takes two numbers and an operator string, and calls the appropriate arithmetic function.
+
+State Management: Utilizes global variables (currentDisplayValue, firstOperand, operatorValue, waitingForNewInput) to track the calculator's state.
+
+Basic Input Handling: inputDigit() correctly manages single-digit input and prevents leading zeros.
+
+Equality Handling (=): handleEquals() initiates the final calculation based on the stored state.
+
+Clear Function: clearCalculator() resets the entire state.
+
+Initial Continuous Calculation Logic: handleOperator() contains logic to store the first operand and manage subsequent operator presses.
+
+🚧 Key Areas for Immediate Improvement (To be addressed next):
+DOM Reference Fixes: Correct several variable and ID mismatch issues (buttonID vs buttonId, HTML IDs like equal and period).
+
+updateDisplay() Fix: The updateDisplay() function is critically flawed:
+
+It doesn't accept the required value argument.
+
+It references an undefined result variable inside its logic.
+
+The Zero Division Error message needs to be correctly displayed.
+
+Operator Handling Logic: The handleOperator() function references an undefined inputValue variable. It needs to correctly use parseFloat(currentDisplayValue) as the second operand for continuous calculations.
+
+Period/Decimal Input (.): The inputPeriod() function is defined but empty. The logic to handle the decimal point (and prevent multiple periods) must be implemented.
+
+Zero Division Error Handling: The check for division by zero should be robustly implemented in the divide function or operate function, and the handling in handleEquals() and handleOperator() needs to be consistent. (The current operate function checks for a string '0', which may be incorrect if the input is converted to a number).
+
+Continuous Operations: Refine the logic for sequences like 12 + 7 - 1 = to ensure the intermediate result (19) is correctly used as the new firstOperand.
