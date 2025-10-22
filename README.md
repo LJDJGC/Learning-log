@@ -1428,3 +1428,39 @@ Finalize handleEquals to correctly conclude the calculation and reset the necess
 Complete the updateDisplay function, including result rounding and displaying the sarcastic error message for zero division.
 
 Connect all functions to the HTML event listeners using the provided suggestions (especially mapping button IDs to operator symbols).
+
+
+## 2025/10/22 Night
+# Simple JavaScript Calculator Project
+
+This project is a simple implementation of a four-function calculator built using vanilla JavaScript, HTML, and CSS. It is a fundamental learning exercise for practicing DOM manipulation, event handling, and managing application state in JavaScript.
+
+## 🛠️ Features
+
+* **Basic Arithmetic Operations:** Supports addition (`+`), subtraction (`-`), multiplication (`*`), and division (`/`).
+* **Sequential Operations:** Allows for continuous calculations (e.g., `3 + 5 * 2`).
+* **Error Handling:** Includes protection against division by zero.
+* **Display Management:** Manages the display of inputs and results, including basic rounding/precision control for long numbers.
+* **Clear Function:** A "Clear" button to reset the calculator state.
+
+## 💻 Project Structure
+
+The core logic resides in a single JavaScript file.
+
+* `calculator.js`: Contains all the logic for the calculator, including arithmetic functions, state variables, event listeners, and display update functions.
+* *(Note: HTML/CSS files are assumed to be present to provide the calculator interface and buttons, but the logic is focused on the JS file.)*
+
+## 💡 Key Learning Points
+
+The development of this calculator focused on:
+
+1.  **Function Composition:** Creating small, reusable functions for each arithmetic operation.
+2.  **State Management:** Implementing and managing state variables (`currentDisplayValue`, `firstOperand`, `operatorValue`, `waitingForNewInput`) to control the flow of the calculation.
+3.  **Event Delegation/Handling:** Attaching event listeners to all button elements and determining the appropriate action (digit input, operator selection, equals, or clear) based on the button clicked.
+4.  **Error Prevention:** Implementing a check to prevent "Zero Division Error".
+
+## 🚀 How to Run
+
+1.  Clone this repository.
+2.  Open the `index.html` file (or the main HTML file) in your web browser.
+3.  The calculator interface should appear, and you can begin testing the functions.
