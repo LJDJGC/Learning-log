@@ -1503,3 +1503,45 @@ Period/Decimal Input (.): The inputPeriod() function is defined but empty. The l
 Zero Division Error Handling: The check for division by zero should be robustly implemented in the divide function or operate function, and the handling in handleEquals() and handleOperator() needs to be consistent. (The current operate function checks for a string '0', which may be incorrect if the input is converted to a number).
 
 Continuous Operations: Refine the logic for sequences like 12 + 7 - 1 = to ensure the intermediate result (19) is correctly used as the new firstOperand.
+
+## 2025/10/23 Night
+Calculator Project - Progress Snapshot 
+
+Goal
+To build a functional web calculator using HTML and Vanilla JavaScript, fulfilling all advanced logic requirements (e.g., chained operations, precision, error handling).
+
+Implemented Features
+Core Arithmetic Functions: Defined add(), subtract(), multiply(), and divide().
+
+operate Function: Implemented the central logic function to execute the chosen arithmetic operation based on the operator symbol.
+
+DOM Structure: Completed the basic HTML structure (calculator.html) with all necessary buttons (0-9, ., C, +, -, ×, ÷, =).
+
+Script Linking: calculator.js is correctly linked at the end of the <body> in calculator.html (Best Practice).
+
+State Management Setup: Initialized global variables for calculator state: currentDisplayValue, firstOperand, operatorValue, and waitingForNewInput.
+
+Basic Event Handling: Event listeners are attached to all buttons to call corresponding functions (inputDigit, handleOperator, handleEqual, clearCalculator).
+
+Known Issues & Next Steps (Bugs & Incomplete Features)
+The following critical issues must be addressed in the next session to make the calculator fully functional and meet all project requirements:
+
+Logical Flaws in JS:
+
+Undefined Variables: Several functions (e.g., updateDisplay, handleOperator, initial console.log) reference variables that are not defined in their scope (e.g., value, result, inputValue).
+
+Broken updateDisplay(): The function is missing its required value argument and contains incorrect logic for zero division error checks and rounding.
+
+Chained Calculation Logic: The logic in handleOperator is incomplete and flawed, preventing continuous operations (e.g., 12 + 7 - 1 =).
+
+Zero Division Check: The check in operate is incorrect (op2 === '0', comparing a number to a string).
+
+Missing Features:
+
+Decimal Input: The inputPeriod() function is currently empty and needs full implementation.
+
+Display Clearing: The logic to clear the display after a calculation result is shown (when a new digit is pressed) is missing.
+
+HTML Improvement (Recommended):
+
+The buttons in calculator.html should be updated with data-* attributes (e.g., data-type="digit", data-operator="*") to simplify the event listener logic in calculator.js.
