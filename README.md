@@ -1545,3 +1545,36 @@ Display Clearing: The logic to clear the display after a calculation result is s
 HTML Improvement (Recommended):
 
 The buttons in calculator.html should be updated with data-* attributes (e.g., data-type="digit", data-operator="*") to simplify the event listener logic in calculator.js.
+
+## 2025/10/24 Morning
+# Simple JavaScript Calculator Project
+
+This repository contains a simple calculator built with plain JavaScript, HTML, and CSS. The goal of this project is to practice fundamental programming concepts, DOM manipulation, and logical flow control.
+
+## Current Features
+
+- **Basic Arithmetic Operations:** Supports addition, subtraction, multiplication, and division.
+- **In-place Operator Handling:** Handles operator chaining (e.g., `5 + 3 + 2`) correctly.
+- **Clear Functionality:** A clear button resets the calculator state.
+- **Display Limit:** Numerical display is limited to a maximum of 9 significant digits (`MAX_DIGITS = 9`), using precision logic to handle long results.
+- **Error Handling:** Displays a specific message for division by zero.
+
+## Key Learning Points
+
+### 1. Handling Array/List Manipulation (Separate Exercise)
+
+- Practiced the "two-pointer" technique for in-place element removal (`removeElement` problem). This technique is crucial for optimizing space complexity.
+
+### 2. Calculator Logic
+
+- **State Management:** Maintaining the calculator's state using variables like `firstOperand`, `operatorValue`, and `waitingForNewInput`.
+- **Operator Logic (`handleOperator`):** Ensures that the displayed value (`currentDisplayValue`) is converted to a number (`parseFloat`) and used as the second operand for chained calculations.
+- **Display Truncation (`updateDisplay`):** Implemented logic to limit the displayed number to `MAX_DIGITS` using `toPrecision()` to maintain mathematical accuracy while fitting the screen.
+- **Event Handling Refinement:** Improved button event handling to use an `if/else if` chain, ensuring that a single button click triggers only one action (e.g., a number button is not also treated as an operator).
+
+## Next Steps
+
+- [ ] Add support for the decimal point (`.`) input and logic.
+- [ ] Implement the backspace/delete functionality.
+- [ ] Refine keyboard support.
+- [ ] Address edge cases for negative numbers and display formatting.
