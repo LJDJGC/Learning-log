@@ -1614,3 +1614,45 @@ This project is a functional, browser-based calculator built using HTML, CSS, an
 * [ ] **In-Progress:** Implementing the decimal point (`.`) input function.
 * [ ] **To Do:** Finalizing number rounding and display overflow logic.
 * [ ] **To Do (Bonus):** Implementing backspace and keyboard support.
+
+
+## 2025/10/28 Morning
+# Simple JavaScript Calculator
+
+This is a basic, fully functional calculator implemented using HTML, CSS (not included in this file but assumed), and JavaScript. It handles standard arithmetic operations and follows typical calculator logic for chained operations and display precision.
+
+## Features
+
+* **Basic Arithmetic:** Supports addition (+), subtraction (-), multiplication (×), and division (÷).
+* **Chained Operations:** Allows for continuous calculations (e.g., `10 + 5 * 2 =` should evaluate `10 + 5` first, display 15, then calculate `15 * 2`).
+* **Display Precision:** Rounds results with many decimal places to a maximum of 9 digits, using scientific notation (`e`) for extremely large or small numbers when necessary.
+* **Zero Division Handling:** Displays a humorous error message ("OMG:(") when attempting to divide by zero and resets the calculator state.
+* **Clear Functionality:** The 'C' button resets all internal states and the display.
+* **Decimal Support:** Allows input of decimal numbers using the '.' button.
+* **Input Handling:** Ensures that new input clears the previous result after an operation is complete.
+
+## Technologies Used
+
+* HTML5
+* CSS3 (for styling)
+* JavaScript (ES6+)
+
+## How to Run
+
+1.  Save the provided HTML (`calculator.html`) and JavaScript (`calculator.js`) files in the same directory.
+2.  Open `calculator.html` in your web browser.
+3.  (Optional) Add CSS to style the calculator interface.
+
+## Project Structure
+
+* `calculator.html`: The structure of the calculator interface.
+* `calculator.js`: Contains all the calculator's core logic and functionality.
+
+## Core Logic Highlights
+
+The calculator manages its state using three key variables:
+1.  `currentDisplayValue`: The number currently shown on the screen.
+2.  `firstOperand`: Stores the first number in the operation (or the result of a previous chained operation).
+3.  `operatorValue`: Stores the pending arithmetic operator (+, -, *, /).
+
+The logic ensures that when a second operator is pressed, the pending operation (`firstOperand` and the current `currentDisplayValue`) is immediately evaluated before setting the new operator, enabling correct chained calculation flow.
