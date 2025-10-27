@@ -1578,3 +1578,39 @@ This repository contains a simple calculator built with plain JavaScript, HTML, 
 - [ ] Implement the backspace/delete functionality.
 - [ ] Refine keyboard support.
 - [ ] Address edge cases for negative numbers and display formatting.
+
+## 2025/10/27 Night
+
+# JavaScript Calculator Project
+
+This project is a functional, browser-based calculator built using HTML, CSS, and vanilla JavaScript. It is primarily a learning exercise focusing on handling complex UI logic, state management, and basic arithmetic operations in JavaScript.
+
+## 🎯 Project Goals and Learning Objectives
+
+1.  **Basic Arithmetic Functions:** Implement the core functions for addition, subtraction, multiplication, and division.
+2.  **`operate` Function:** Create a function to take two numbers and an operator, and call the correct arithmetic function.
+3.  **DOM Manipulation:** Connect the HTML buttons to the JavaScript logic to capture user input.
+4.  **State Management:** Successfully manage the calculator's state using key variables:
+    * `currentDisplayValue`: The number currently shown on the screen.
+    * `firstOperand`: The first number in a calculation (e.g., the '3' in '3 + 5').
+    * `operatorValue`: The chosen operation (e.g., '+', '-', etc.).
+    * `waitingForNewInput`: A boolean flag to handle when the next digit should clear the display or continue the current number.
+5.  **Chained Operations Logic:** Implement the tricky logic for continuous calculations (e.g., `12 + 7 - 1 =`). The calculator must evaluate the preceding operation when a new operator is pressed.
+6.  **Edge Case Handling:** Address potential issues to make the calculator robust:
+    * **Zero Division Error:** Display a humorous error message instead of crashing.
+    * **Display Overflow:** Round long results to fit the display (e.g., max 9 digits).
+    * **Decimal Input (Bonus):** Allow users to input floating-point numbers while preventing multiple decimal points (e.g., `1.2.3`).
+    * **Keyboard Support (Bonus):** Add functionality to use the computer keyboard for input.
+
+## ✅ Current Progress (as of 2025/10/27 Night)
+
+* [x] Basic HTML structure and button layout.
+* [x] Core arithmetic functions (`add`, `subtract`, `multiply`, `divide`).
+* [x] `operate` function implemented with Zero Division Error check.
+* [x] Event listeners for digits, operators, equals, and clear.
+* [x] Logic for basic two-number calculations (`A operator B =`).
+* [x] Logic for chained operations (`A operator B operator C...`).
+* [x] `clear` function implementation.
+* [ ] **In-Progress:** Implementing the decimal point (`.`) input function.
+* [ ] **To Do:** Finalizing number rounding and display overflow logic.
+* [ ] **To Do (Bonus):** Implementing backspace and keyboard support.
