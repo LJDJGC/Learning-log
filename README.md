@@ -1656,3 +1656,39 @@ The calculator manages its state using three key variables:
 3.  `operatorValue`: Stores the pending arithmetic operator (+, -, *, /).
 
 The logic ensures that when a second operator is pressed, the pending operation (`firstOperand` and the current `currentDisplayValue`) is immediately evaluated before setting the new operator, enabling correct chained calculation flow.
+
+
+## 2025/10/28 Night
+
+# Simple JavaScript Calculator
+
+This is a web-based calculator application built using HTML, CSS (not shown in the provided files, but implied for styling), and pure JavaScript.
+
+## Features
+
+This calculator includes all standard basic arithmetic operations and handles typical edge cases found in calculator design.
+
+### Core Functionality
+* **Basic Operations**: Addition (`+`), Subtraction (`-`), Multiplication (`×`), and Division (`÷`).
+* **Chained Operations**: Supports continuous calculations (e.g., $12 + 7 - 1 = 18$).
+* **Display Management**: Clears the display when a new number is pressed after an equals operation.
+* **Clear Function**: A 'C' button to reset all current calculation states.
+
+### Error Handling & Precision
+* **Zero Division Error**: Displays a custom error message (e.g., "OMG:(" or "Zero Division Error") when attempting to divide by zero, and resets the calculator state.
+* **Display Limit**: Automatically rounds or uses precision for results with too many decimal places to prevent display overflow.
+
+### Added Features (To be implemented or already present)
+* **Decimal Support**: Allows inputting decimal numbers using the `.` button.
+* **Back Space / Delete**: (Planned or Implemented) A function to remove the last digit entered.
+* **Keyboard Support**: (Planned or Implemented) Full calculator control via the keyboard.
+
+## Files
+
+* `calculator.html`: The structure of the calculator interface (buttons and display).
+* `calculator.js`: The JavaScript file containing all the calculator's core logic and functionality.
+
+## Usage
+
+1.  Open the `calculator.html` file in your web browser.
+2.  Use the on-screen buttons or your keyboard to perform calculations.
