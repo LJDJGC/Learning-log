@@ -1734,3 +1734,33 @@ Implement operator highlighting (inverting colors) to show the currently selecte
 Add functionality for percentage (%) and sign change (+/-).
 
 Improve error display handling.
+
+## 2025/11/04 Night
+# 🧮 Calculator
+
+This is a web-based calculator application developed as part of **The Odin Project's** curriculum. The project focuses on building a functional calculator using HTML, CSS, and JavaScript.
+
+## ✨ Features
+
+* **Basic Arithmetic:** Supports addition, subtraction, multiplication, and division.
+* **Clear and Backspace:** Functionality to clear the display (`C`) and remove the last entered digit (`←`).
+* **Responsive Design:** Styled with the intention of mimicking the look and feel of a **mobile calculator interface, specifically inspired by an iPhone calculator's aesthetic** (currently only basic dark-mode styling is implemented, with further CSS enhancements planned).
+
+## 🛠️ Technologies Used
+
+* **HTML5:** Structure and content.
+* **CSS3:** Styling (currently includes basic dark background and white text).
+* **JavaScript:** Logic for calculator operations (to be implemented in `calculator.js`).
+
+## 📁 File Structure
+
+* `calculator.html`: Main HTML file containing the calculator layout.
+* `style.css`: CSS file for styling the calculator.
+* `calculator.js`: JavaScript file for handling the calculator's logic (input, calculations, and display updates).
+
+## 🚀 Getting Started
+
+1.  Clone this repository.
+2.  Open `calculator.html` in your web browser.
+
+---
