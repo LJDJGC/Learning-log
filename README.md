@@ -1832,3 +1832,29 @@ The calculator is styled to closely mimic the **dark mode iOS/iPhone aesthetic**
 * **HTML5:** Structure (`calculator.html`).
 * **CSS3:** Styling and layout using Flexbox (`style.css`).
 * **JavaScript (ES6+):** Core logic, operation handling, and DOM manipulation (`calculator.js`).
+
+
+## 2025/11/06 Morning
+
+## 🚀 Learning Progress and Context (2025/11/06)
+
+This project has served as a capstone for the Foundations path, demonstrating proficiency in core web development.
+
+* **HTML/CSS Milestone:** Completed the essential styling and layout (including complex Flexbox arrangement for the buttons) for the calculator interface.
+    * *Note:* The design, closely mimicking the requested iPhone aesthetic, is now considered finalized.
+* **JavaScript Implementation:** Successfully implemented the full calculation logic in `calculator.js`, including chained operations, error handling, and keyboard support.
+* **Current Focus:** The developer has officially moved on to **The Odin Project's JavaScript Full Stack path**, starting with the Introduction/Intermediate HTML & CSS course materials. This repository marks the successful completion of the Foundations final project.
+
+## ✨ Features Implemented
+
+* **Core Arithmetic Operations:** Supports addition (+), subtraction (-), multiplication (×), and division (÷).
+* **Chained Operations:** Allows continuous calculation without pressing the equals button after every operation.
+* **Input Handling:** Digit, Operator, and **full Keyboard support** for calculation.
+* **Display Logic:** Handles decimal input (`.`), **Backspace** (`←`), and a **Clear** (`C`) function to reset calculations.
+* **Error Handling (with Humor!):** Displays a custom message ("OMG:(") when attempting division by zero, preventing program crash.
+
+## 🛠️ Tech Stack
+
+* **HTML5:** Page structure definition.
+* **CSS3:** Style and layout using Flexbox.
+* **JavaScript (ES6+):** Calculation logic and DOM manipulation.
