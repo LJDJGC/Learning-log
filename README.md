@@ -1794,3 +1794,41 @@ HTML (calculator.html)
 Added ID/Class for Custom Styling: Added the class bottom to the 0 and = buttons to potentially facilitate their unique sizing/positioning in the last row.
 
 Button Reordering: The "C" (Clear) and "←" (Backspace) buttons were reordered in the .first-row.
+
+
+## 2025/11/05 Night
+# 🧮 Calculator Project: iOS Aesthetic
+
+This project is the **Calculator assignment** from **The Odin Project's Foundations curriculum**. The goal was to build a fully functional web calculator using basic web technologies, with a specific focus on replicating the clean, modern look and feel of an **iPhone calculator**.
+
+## ✨ Features Implemented
+
+* **Core Arithmetic Operations:** Supports addition (+), subtraction (-), multiplication (×), and division (÷) using an `operate` function.
+* **Chained Operations:** Allows continuous calculation without pressing the equals button after every operation.
+* **Input Handling:**
+    * Digit and Operator input via on-screen buttons.
+    * Keyboard support for digits, operators (`+`, `-`, `*`, `/`), Enter (for `=`), Backspace, and Escape/C (for Clear).
+* **Display Logic:**
+    * Handles decimal input (`.`).
+    * Includes a **Backspace** (`←`) function to delete the last entered digit.
+    * Implements a **Clear** (`C`) function to reset all calculations.
+    * Includes a logic to handle and visually represent large numbers using `toPrecision` up to 9 digits.
+* **Error Handling (with Humor!):** Displays a custom message ("OMG:(") when attempting division by zero, preventing program crash.
+
+## 🎨 Design and Styling
+
+The calculator is styled to closely mimic the **dark mode iOS/iPhone aesthetic**:
+
+* **Layout:** A compact, mobile-friendly container with distinct vertical spacing for the display and button grid.
+* **Button Grid:** A robust 4-column Flexbox layout ensures buttons are uniformly sized and correctly positioned across all rows.
+* **Color Scheme:** Uses the standard dark theme:
+    * Number Buttons (`btn-num`): Dark gray (`#1a1a1a`).
+    * Operator Buttons (`btn-op`): Signature orange (`#FFAA33`).
+    * Function Buttons (`btn-func`): Gray (`#808080`).
+* **Zero Button:** Special styling is applied to the '0' button for an elongated, oval appearance (though not fully finalized in the provided CSS, the structure is ready).
+
+## 🛠️ Tech Stack
+
+* **HTML5:** Structure (`calculator.html`).
+* **CSS3:** Styling and layout using Flexbox (`style.css`).
+* **JavaScript (ES6+):** Core logic, operation handling, and DOM manipulation (`calculator.js`).
