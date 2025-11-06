@@ -1858,3 +1858,34 @@ This project has served as a capstone for the Foundations path, demonstrating pr
 * **HTML5:** Page structure definition.
 * **CSS3:** Style and layout using Flexbox.
 * **JavaScript (ES6+):** Calculation logic and DOM manipulation.
+
+
+## 2025/11/06 Night
+# 🧮 The Odin Project: Calculator (Foundations Capstone)
+
+This project serves as the final capstone assignment for **The Odin Project's Foundations curriculum**. It is a fully functional web calculator built using core web technologies, meticulously styled to replicate the clean, dark-mode aesthetic of an iPhone calculator.
+
+## ✅ Project Status & Learning Milestones
+
+The Calculator project is **100% complete** and successfully deployed via GitHub Pages, marking the successful conclusion of the Foundations path.
+
+### 🚀 Current Learning Focus: JavaScript Full Stack
+
+The developer has transitioned to the **JavaScript Full Stack path** and is actively working through its initial modules.
+
+* **Course:** Introduction: Intermediate HTML and CSS Course
+* **Progress:** **4% Complete** (as of 2025/11/06)
+* **Significance:** This stage involves deepening the understanding of advanced CSS topics (e.g., Flexbox, Grid, Responsive Design) and preparing for the complex JavaScript projects ahead.
+
+## ✨ Key Features (Calculator Project)
+
+* **Full Arithmetic:** Supports addition, subtraction, multiplication, and division.
+* **Chained Operations:** Allows continuous calculations (e.g., `5 + 3 - 2 =`).
+* **Keyboard Support:** Fully operable using the numeric keypad and standard operator keys.
+* **Error Handling:** Custom error message ("OMG:(") for division by zero scenarios.
+
+## 🛠️ Tech Stack
+
+* **HTML5:** Structure.
+* **CSS3:** Styling and precise layout using Flexbox.
+* **JavaScript (ES6+):** Core operation logic and DOM interaction.
