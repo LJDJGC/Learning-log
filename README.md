@@ -1924,3 +1924,29 @@ Developer has transitioned to the JavaScript Full Stack path and is currently ac
 | Course | Topic | Status | Note |
 | :--- | :--- | :--- | :--- |
 | **Intermediate HTML and CSS Course** | **Emmet** | **Completed** | Mastered **Emmet abbreviations** and syntax for rapid HTML structure and CSS property generation, which will significantly speed up coding efficiency in future projects. This marks a continued progression into the Full Stack path. |
+
+
+## 2025/11/11 Morning
+# 🚀 The Odin Project: Learning Log Update
+
+## 🗓️ Today's Progress (2025/11/11 Morning)
+
+This morning focused on a dual approach: deepening core development skills via The Odin Project and improving algorithmic problem-solving via NeetCode.
+
+| Platform | Course/Topic | Status | Note |
+| :--- | :--- | :--- | :--- |
+| **NeetCode** | **Contains Duplicate** (Array/Hash Map) | **Completed** | Successfully solved this fundamental problem, reinforcing concepts of efficient data structure use (Hash Maps) for time complexity optimization. |
+| **The Odin Project** | **Emmet** (Intermediate HTML and CSS Course) | **Completed** | Finalized the review and practice of Emmet abbreviations, ensuring maximum efficiency for future HTML/CSS coding. |
+| **The Odin Project** | **Tables** (Intermediate HTML and CSS Course) | **In Progress** | Started the module on semantic HTML tables, including structure, styling, and accessibility best practices. |
+
+---
+
+## ✅ Previous Milestones (Summary)
+
+* **Calculator Project:** **100% Complete** (Foundations Capstone).
+* **Current Path:** JavaScript Full Stack (Intermediate HTML/CSS module).
+
+## 🛠️ Project Tech Stack
+
+* **HTML5 / CSS3:** Structure and Layout (Flexbox).
+* **JavaScript (ES6+):** Core operation logic and DOM interaction.
