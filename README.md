@@ -1950,3 +1950,75 @@ This morning focused on a dual approach: deepening core development skills via T
 
 * **HTML5 / CSS3:** Structure and Layout (Flexbox).
 * **JavaScript (ES6+):** Core operation logic and DOM interaction.
+
+
+## 2025/11/11 Night
+# 🚀 The Odin Project: Learning Log Update
+
+## 🗓️ Today's Progress (2025/11/11 Night)
+
+This evening was dedicated to deepening intermediate front-end knowledge via The Odin Project.
+
+| Platform | Course/Topic | Status | Note |
+| :--- | :--- | :--- | :--- |
+| **The Odin Project** | **Tables** (Intermediate HTML and CSS Course) | **Continued** | Focused on the structural and semantic aspects of HTML tables. Currently progressing through the module covering `<thead>`, `<tbody>`, `<tfoot>`, and accessibility features. |
+
+---
+
+
+## 2025/11/12 Morning
+# 📚 Learning Log - 2025-11-12 Morning
+
+## 📅 Date & Time
+**Date:** November 12, 2025 (Wednesday)
+**Time:** Morning Session
+
+---
+
+## 🎯 Focus Areas
+
+| Course/Topic | Status | Details |
+| :--- | :--- | :--- |
+| **HTML & CSS Course** | In Progress | Tables Intermediate |
+| **Algorithm Practice** | Completed | NeetCode - Valid Anagram |
+
+---
+
+## 💻 Detailed Notes
+
+### 1. HTML & CSS Course: Tables Intermediate
+
+* **Objective:** Deepen understanding of advanced table structuring and styling.
+* **Key Concepts Covered:**
+    * Using the `colspan` and `rowspan` attributes to merge cells.
+    * Implementing table semantically with `<thead>`, `<tbody>`, and `<tfoot>`.
+    * Styling tables effectively using CSS properties like `border-collapse`, `caption-side`, and `:nth-child()`.
+* **Next Steps:** Move on to **Forms** or **Layout techniques** in the course.
+
+### 2. Algorithm Practice: Valid Anagram (NeetCode)
+
+* **Problem:** Given two strings, *s* and *t*, return `true` if *t* is an anagram of *s*, and `false` otherwise.
+* **Solution Approach Used:** **Hash Map (Frequency Counting)**
+    * Created two frequency maps (or a single map and decrement approach) to store the character counts for both strings *s* and *t*.
+    * Confirmed that both strings have the same length initially (a necessary condition).
+    * Iterated through the map to check if all character counts match (i.e., all counts are zero in the single map approach).
+* **Complexity:**
+    * Time Complexity: $O(n)$, where $n$ is the length of the string (due to iterating through the string once and the alphabet once).
+    * Space Complexity: $O(1)$, since the map size is capped at 26 (the number of lowercase English letters).
+
+---
+
+## ✅ Summary & Reflection
+
+Today was a balanced session focusing on both **web development fundamentals (HTML tables)** and **core algorithmic thinking (Anagrams)**. The frequency counting method for the Anagram problem was a good refresher on efficient string manipulation.
+
+**What went well:** Successfully implemented the core concepts of table structure and solved the algorithm problem efficiently.
+
+**Areas for improvement:** Practice more complex table layouts, especially those involving responsive design considerations.
+
+---
+
+## ⏭️ Plan for the Next Session
+
+* Review solutions for **Valid Anagram** using the **Sorting** method for comparison.
+* Start the **Forms** section of the HTML/CSS course.
