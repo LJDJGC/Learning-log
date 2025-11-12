@@ -2038,3 +2038,32 @@ Continued reading and reviewing the technical content related to creating and st
 Stopped partway through the reading material for the night.
 
 Next step: Will resume the course/reading material from where I left off tomorrow.
+
+
+## 2025/11/13 Morning
+💻 Morning Learning Log - November 13, 2025
+Overview
+Finished my morning programming session. Today's focus was on algorithmic practice using NeetCode and intermediate HTML/CSS with The Odin Project.
+
+Algorithm Practice (NeetCode) 💡
+Problem: Two Sum (Easy)
+
+Status: Completed.
+
+Reflection: Although it's an "Easy" problem, I found it challenging, which reinforced the need for continued practice. My goal is to keep working on these types of problems to strengthen my algorithmic thinking and implementation skills (実装できるようになりたい).
+
+Web Development (The Odin Project) 🌳
+Course/Section: Intermediate HTML and CSS Course
+
+Topic: Tables
+
+Activity: I was in the middle of attempting the MDN Table Assessment when the session concluded.
+
+Status: In progress (Paused mid-assessment).
+
+Next Step: Complete the MDN Table Assessment.
+
+Personal Goal ⭐
+Consistency is key. I am committed to daily practice, even when the problems (like those on NeetCode) feel difficult, to improve my overall problem-solving and coding abilities.
+
+
