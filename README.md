@@ -2022,3 +2022,19 @@ Today was a balanced session focusing on both **web development fundamentals (HT
 
 * Review solutions for **Valid Anagram** using the **Sorting** method for comparison.
 * Start the **Forms** section of the HTML/CSS course.
+
+## 2025/11/12 Night 
+🌙 Evening Study Session: November 12, 2025
+📚 Course/Topic: Intermediate HTML and CSS Course - Tables
+🎯 Goal for the Session:
+To continue studying the technical documentation/site for the Tables section of the course.
+
+✅ Progress Achieved:
+Continued reading and reviewing the technical content related to creating and styling tables in HTML and CSS.
+
+(Add specific sub-topics here if you recall any, e.g., Reviewed colspan and rowspan properties or Explored CSS Grid for table-like layouts.)
+
+🛑 Current Status:
+Stopped partway through the reading material for the night.
+
+Next step: Will resume the course/reading material from where I left off tomorrow.
