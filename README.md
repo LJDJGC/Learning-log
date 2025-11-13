@@ -2067,3 +2067,46 @@ Personal Goal ⭐
 Consistency is key. I am committed to daily practice, even when the problems (like those on NeetCode) feel difficult, to improve my overall problem-solving and coding abilities.
 
 
+## 2025/11/13 Night 
+# 🪐 Web Development Learning Log: Planet Data Table Challenge
+
+This repository contains my work-in-progress solution for a table structuring challenge, primarily focusing on advanced HTML table markup and corresponding CSS styling.
+
+## 📅 Log Date
+
+**November 13, 2025 (Night Session)**
+
+## 🎯 Current Challenge
+
+The challenge is to correctly structure and style an HTML table that displays various data points for the planets in our solar system.
+
+* **Source:** The task is linked from The Odin Project's "Tables Intermediate HTML and CSS Course," which points to the **MDN Web Docs** challenge: [https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Planet_data_table](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Planet_data_table)
+
+## 💻 Progress
+
+I have successfully created the initial `index.html` file with the basic table structure for the "Terrestrial planets" section (Mercury and Venus) and implemented a corresponding `style.css` file.
+
+### Key Accomplishments:
+
+* **HTML Structure (`index.html`):**
+    * Used the `<table>`, `<caption>`, `<tr>`, `<th>`, and `<td>` elements.
+    * Successfully added the table caption with a hyperlink.
+    * Implemented `<th>` elements for column headers.
+    * Used the `<sup>` tag for the exponents in the "Mass" column (`10<sup>24</sup>kg`).
+* **CSS Styling (`style.css`):**
+    * Defined basic table styling (`border-collapse`, borders).
+    * Styled table cells and headers (`padding`, `text-align`, `background-color`).
+    * Applied basic **zebra striping** using the `:nth-child(even)` and `:nth-child(odd)` selectors for better readability.
+
+### Pending Tasks:
+
+The table structure is currently incomplete and needs to be extended to include the remaining sections as required by the challenge:
+
+1.  **Complete Terrestrial Planets:** Add Earth and Mars data.
+2.  **Add Jupiter and Saturn:** Structure and add data for the "Gas giants."
+3.  **Add Uranus and Neptune:** Structure and add data for the "Ice giants."
+4.  **Implement Advanced Semantics:** Correctly use `<thead>`, `<tbody>`, `<tfoot>`, `<th>` with `scope`, and implement `rowspan` and `colspan` to semantically group the planets (Terrestrial, Gas, Ice). *This is the primary remaining structural challenge.*
+
+## 💡 Reflection
+
+Working through this practical challenge is significantly deepening my understanding of how to correctly use advanced HTML table elements (like `rowspan` and `colspan` which are required next) and how to apply CSS selectors to structure and style data effectively. This hands-on approach is very valuable.
