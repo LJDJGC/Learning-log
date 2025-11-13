@@ -2110,3 +2110,41 @@ The table structure is currently incomplete and needs to be extended to include 
 ## 💡 Reflection
 
 Working through this practical challenge is significantly deepening my understanding of how to correctly use advanced HTML table elements (like `rowspan` and `colspan` which are required next) and how to apply CSS selectors to structure and style data effectively. This hands-on approach is very valuable.
+
+
+# 2025/11/14 Morning
+🚀 Learning Log for The Odin Project
+Date
+November 14, 2025 (Morning)
+
+Course
+The Odin Project: Tables Intermediate HTML and CSS Course
+
+Progress
+Successfully completed the majority of the Tables Assessment from MDN exercise. All core table structures, spans, and accessibility features (scope, <caption>) have been implemented.
+
+Current Challenge & Solution Focus
+I am currently working on the final styling task:
+
+Challenge: Add a black border around the columns that contain the planet names, using the appropriate <colgroup> / <col> structure and the provided CSS class style: .column-border.
+
+Plan to Resolve
+The solution requires two steps:
+
+HTML Structure: Identify the columns to be bordered (the planet names are likely in the first column, or a specific range of columns) and wrap the corresponding <col> elements within a <colgroup> element placed immediately after the <caption> tag.
+
+CSS Application: Apply the provided .column-border class to the appropriate <col> or <colgroup> element to activate the styling.
+
+Example HTML Structure for the Solution:
+
+HTML
+
+<colgroup>
+    <col class="column-border">
+    <col>
+    <col>
+    </colgroup>
+Next Steps
+Complete the MDN Tables Assessment by implementing the <colgroup> and .column-border class.
+
+Move on to the next topic in The Odin Project Intermediate HTML and CSS Course.
