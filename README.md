@@ -2148,3 +2148,22 @@ Next Steps
 Complete the MDN Tables Assessment by implementing the <colgroup> and .column-border class.
 
 Move on to the next topic in The Odin Project Intermediate HTML and CSS Course.
+
+
+# 2025/11/14 Night
+
+📚 Learning Log: Intermediate HTML & CSS
+Date
+November 14, 2025 (Night Session)
+
+Course
+Intermediate HTML and CSS Course
+
+Completed Task
+MDN Tables Assessment
+
+Details
+I successfully completed the designated Tables Assessment from MDN (Mozilla Developer Network). This hands-on exercise was an excellent opportunity to put my newly acquired skills in HTML table creation and CSS styling into practice.
+
+Reflection
+Finishing the assessment felt incredibly satisfying. I got a huge rush of accomplishment from seeing the completed work. I feel myself getting more and more hooked on programming! I'm ready for the next challenge.
