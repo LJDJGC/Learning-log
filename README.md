@@ -2167,3 +2167,7 @@ I successfully completed the designated Tables Assessment from MDN (Mozilla Deve
 
 Reflection
 Finishing the assessment felt incredibly satisfying. I got a huge rush of accomplishment from seeing the completed work. I feel myself getting more and more hooked on programming! I'm ready for the next challenge.
+
+
+## 2025/11/17 Morning
+📅 November 17, 2025 (Morning) Learning Log💻 Computer Science (NeetCode)✅ Completed Understanding of Top K Frequent ElementsTopic: Top K Frequent ElementsProgress: Completed understanding of the problem's solution (bucket sort approach).Achievement: Learned a highly efficient method that can process in $O(N)$ time complexity, faster than standard sorting or heap-based $O(N \log N)$ methods.🌐 Web Development (The Odin Project)📘 Intermediate HTML and CSS CourseStatusModuleContentCompletedTables* Learned how to structure data using appropriate semantic HTML elements (<table>, <thead>, <tbody>, <tr>, <th>, <td>).* Understood how to use the colspan and rowspan attributes to span cells.In ProgressDefault Styles* Started learning about default styles provided by browsers. * This is important as a foundation for resetting or normalizing styles before applying custom CSS.
