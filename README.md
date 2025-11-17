@@ -2171,3 +2171,135 @@ Finishing the assessment felt incredibly satisfying. I got a huge rush of accomp
 
 ## 2025/11/17 Morning
 📅 November 17, 2025 (Morning) Learning Log💻 Computer Science (NeetCode)✅ Completed Understanding of Top K Frequent ElementsTopic: Top K Frequent ElementsProgress: Completed understanding of the problem's solution (bucket sort approach).Achievement: Learned a highly efficient method that can process in $O(N)$ time complexity, faster than standard sorting or heap-based $O(N \log N)$ methods.🌐 Web Development (The Odin Project)📘 Intermediate HTML and CSS CourseStatusModuleContentCompletedTables* Learned how to structure data using appropriate semantic HTML elements (<table>, <thead>, <tbody>, <tr>, <th>, <td>).* Understood how to use the colspan and rowspan attributes to span cells.In ProgressDefault Styles* Started learning about default styles provided by browsers. * This is important as a foundation for resetting or normalizing styles before applying custom CSS.
+
+
+## 2025/11/17 Night
+Learning Log – 2025/11/17 Night
+Topic: CSS Units (Intermediate HTML & CSS Course)
+Overview
+
+Tonight’s session was dedicated to reading and completing the section on CSS Units from the Intermediate HTML and CSS Course. The focus was on understanding how different measurement units behave, and how to choose the right one depending on layout or design needs.
+
+What I Studied
+CSS Units Overview
+
+I reviewed both absolute and relative units used in CSS and gained clarity on their practical applications.
+
+Absolute Units
+
+px
+
+cm, mm
+
+in, pt, pc
+Used when consistent, non-scaling sizing is required.
+
+Relative Units
+
+em – relative to the font size of the element
+
+rem – relative to the root (html) font size
+
+% – relative to the parent element
+
+vw, vh – viewport width/height units
+
+vmin, vmax – relative to the smaller/larger viewport dimension
+
+These units are essential for responsive layouts and scalable typography.
+
+Key Takeaways
+
+Relative units provide far better flexibility for modern, responsive design.
+
+rem is ideal for consistent typography scaling.
+
+Viewport units such as vw/vh help create full-screen sections and adaptive UI components.
+
+Understanding the relationship between parent and child elements is crucial when using % or em.
+
+Reflection
+
+Finishing this section strengthened my understanding of how CSS controls layout sizing. Building intuition for choosing the proper unit feels like a foundational skill that will directly impact future projects, especially as I work toward more advanced frontend development.
+
+
+## 2025/11/18 Morning
+Learning Log – HTML/CSS & Algorithm Practice
+
+Date: 2025-11-18
+
+Overview
+
+Today’s session focused on strengthening frontend fundamentals through CSS units and improving algorithmic thinking with string encoding/decoding logic. The goal is to build a consistent habit of learning both practical web development skills and core computer science concepts.
+
+Topics Covered
+1. CSS Units
+
+From the Intermediate HTML and CSS Course, I reviewed and practiced multiple CSS measurement units, focusing on when and why to use each.
+
+Key Concepts Learned
+
+Absolute units: px, pt, cm, etc.
+
+Relative units:
+
+em – relative to the font size of the element
+
+rem – relative to the root font size
+
+% – relative to the parent element
+
+vw, vh – relative to viewport dimensions
+
+vmin, vmax – responsive behavior based on the smallest/largest viewport dimension
+
+Practical understanding of when to use responsive units (e.g., rem, vw) vs fixed units (e.g., px).
+
+2. NeetCode – Encode and Decode Strings
+
+Worked on the classic “Encode and Decode Strings” problem from NeetCode, focusing on reliable string packing and parsing.
+
+Key Takeaways
+
+Encoding strategy: <length>#<string>
+
+Decoding logic:
+
+Parse the length prefix
+
+Skip the # delimiter
+
+Extract exactly length characters
+
+Learned the importance of avoiding ambiguous encodings and handling variable-length strings safely.
+
+Example (JavaScript)
+class Solution {
+  encode(strs) {
+    let res = '';
+    for (let s of strs) {
+      res += s.length + '#' + s;
+    }
+    return res;
+  }
+
+  decode(str) {
+    let res = [];
+    let i = 0;
+    while (i < str.length) {
+      let j = i;
+      while (str[j] !== '#') {
+        j++;
+      }
+      const length = parseInt(str.slice(i, j));
+      const value = str.slice(j + 1, j + 1 + length);
+      res.push(value);
+      i = j + 1 + length;
+    }
+    return res;
+  }
+}
+
+Reflection
+
+Today’s study combined practical UI skills with algorithm problem-solving. Understanding CSS units improved my ability to write responsive layouts, while the encode/decode exercise strengthened string manipulation and parsing skills. Both areas support my long-term goal of becoming a strong software engineer with solid fundamentals.
