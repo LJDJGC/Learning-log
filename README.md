@@ -2303,3 +2303,32 @@ class Solution {
 Reflection
 
 Today’s study combined practical UI skills with algorithm problem-solving. Understanding CSS units improved my ability to write responsive layouts, while the encode/decode exercise strengthened string manipulation and parsing skills. Both areas support my long-term goal of becoming a strong software engineer with solid fundamentals.
+
+
+## 2025/11/18 Night
+
+Learning Log - November 18, 2025 (Night Session)
+Course Progress
+Continued studying The Odin Project's Intermediate HTML and CSS Course
+What I Studied
+
+Progressed through the Intermediate HTML and CSS course materials
+Read up to a certain point in the curriculum at　intermediate html and css
+Took a quick read-through approach with plans for deeper review later
+
+Study Strategy
+
+Initial approach: Quick reading to get an overview of the concepts
+Planned review method: Active recall sessions scheduled for weekends
+This two-phase approach allows for initial exposure followed by deeper retention through active recall practice
+
+Next Steps
+
+Continue with the remaining sections of the Intermediate HTML and CSS course
+Implement active recall review sessions on upcoming weekends to reinforce learned concepts
+Practice applying the HTML and CSS techniques covered in the course
+
+
+Study Method: Quick reading + Active recall review
+Course: The Odin Project - Intermediate HTML and CSS
+Date: November 18, 2025 (Night)
