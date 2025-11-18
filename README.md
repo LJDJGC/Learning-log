@@ -2332,3 +2332,35 @@ Practice applying the HTML and CSS techniques covered in the course
 Study Method: Quick reading + Active recall review
 Course: The Odin Project - Intermediate HTML and CSS
 Date: November 18, 2025 (Night)
+
+
+## 2025/11/19 Morning 
+📘 Learning Log — 2025/11/19 Morning
+Overview
+
+This morning, I continued working through the Intermediate HTML and CSS Course. I completed the section on CSS Units and made progress into More Text Styles.
+
+What I Learned
+✅ CSS Units
+
+Reviewed the differences between absolute units (px, pt) and relative units (em, rem, vw, vh).
+
+Practiced choosing appropriate units based on context, such as fluid layouts, accessibility, and scalability.
+
+Strengthened understanding of how em and rem propagate and how they affect component design.
+
+🚧 More Text Styles (In Progress)
+
+Started exploring additional text-related properties beyond the basics.
+
+Practiced working with line height, letter spacing, and advanced font-related techniques.
+
+Began applying these styles to improve readability and hierarchy in sample layouts.
+
+Next Steps
+
+Finish the More Text Styles section.
+
+Move on to more complex layout and design topics in the Intermediate Course.
+
+Apply what I learned to small personal projects to reinforce unit selection and typographic control.
