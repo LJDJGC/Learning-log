@@ -2493,3 +2493,18 @@ Revisit the Valid Sudoku problem and rewrite the solution from scratch.
 Use active recall: try explaining the algorithm in my own words and implement it without hints.
 
 Move on to the next NeetCode problem once I feel comfortable reproducing the solution reliably.
+
+## 2025/11/25 Morning
+
+📚 Learning Log: More Text Styles (System Font Stacks)Here is a summary of the concepts covered while working through the System Font Stack section of the Intermediate HTML and CSS Course.📝 Key Concepts Learned1. The System Font Stack (Native Fonts)A System Font Stack is a list of font-family values that directs the browser to use the default user interface (UI) font of the operating system (OS) or device being used.Goal: To make the text on a website look native to the user's OS, resulting in a clean, fast-loading, and comfortable reading experience.Performance Benefit: Since these fonts are already installed locally on the user's device, the browser does not need to download any web font files, leading to zero latency and instant rendering.2. Standard CSS Stack for System FontsThe modern standard system font stack is complex because it must account for the default UI fonts used across all major operating systems, which have different default fonts (e.g., Apple uses San Francisco, Windows uses Segoe UI, Android uses Roboto).The typical CSS declaration looks like this:CSSfont-family:
+    -apple-system, 
+    BlinkMacSystemFont, 
+    "Segoe UI", 
+    Roboto, 
+    Helvetica, 
+    Arial, 
+    sans-serif;
+Breakdown of the Stack:Font/KeywordTarget OS/Use-apple-systemTargets Safari and Firefox on macOS/iOS. This ensures the proprietary San Francisco font is used correctly.BlinkMacSystemFontTargets Chrome on macOS. It's necessary for handling the San Francisco font specifically in Blink-based browsers."Segoe UI"The default UI font for Windows (7 and later).RobotoThe default system font for Android devices and many ChromeOS devices.Helvetica, ArialFallbacks for older macOS/iOS versions and older Windows/Linux systems that might not recognize the modern UI fonts.sans-serifThe generic family fallback; ensures some non-serif font is used if all else fails.💡 Practical Implementation NoteTo implement this, you simply apply the full stack to the body or html selector in your CSS to affect all primary text on the page:CSSbody {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+This ensures that the text renders using the most appropriate native font available on the user's device, prioritizing speed and familiarity.
