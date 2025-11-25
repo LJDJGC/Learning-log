@@ -2508,3 +2508,29 @@ Breakdown of the Stack:Font/KeywordTarget OS/Use-apple-systemTargets Safari and 
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 This ensures that the text renders using the most appropriate native font available on the user's device, prioritizing speed and familiarity.
+
+
+## 2025/11/25 Night
+🚀 Intermediate HTML and CSS: Typography Progress
+Today, I focused on the following resources to deepen my understanding of web typography best practices and font implementation:
+
+More Text Styles (Intermediate HTML and CSS Course)
+
+Completed the module on Font Best Practices. This covered essential techniques for ensuring text is readable, accessible, and visually appealing across different devices.
+
+MDN's article on web fonts
+
+Reviewed the article to understand the technical details of using web fonts, including performance considerations, the @font-face rule, and different font formats (e.g., WOFF2, TTF).
+
+web.dev Typography guide
+
+Studied this comprehensive guide, which emphasizes the impact of typography on website performance and user experience (UX). Key topics included font loading strategies, font-display, and techniques to mitigate layout shift (FOUC/FOIT).
+
+🧠 Key Takeaways
+Performance is crucial: Optimizing font loading (e.g., preloading, subsetting, and using WOFF2) is essential for faster page loads.
+
+Accessibility First: Using sufficient contrast and appropriate line-height and font-size is non-negotiable for readability.
+
+The Power of @font-face: Understanding how to properly define font families and sources is fundamental to using custom web fonts effectively.
+
+Would you like me to elaborate on a specific concept, such as how to implement the @font-face rule or the difference between FOUC and FOIT?
