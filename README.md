@@ -2533,4 +2533,45 @@ Accessibility First: Using sufficient contrast and appropriate line-height and f
 
 The Power of @font-face: Understanding how to properly define font families and sources is fundamental to using custom web fonts effectively.
 
-Would you like me to elaborate on a specific concept, such as how to implement the @font-face rule or the difference between FOUC and FOIT?
+
+## 2025/11/26 Morning
+
+📚 Learning Log: Intermediate Web Development & Algorithms
+Intermediate HTML and CSS Course: More Text Styles & CSS Properties
+This week, I continued my studies in the Intermediate HTML and CSS Course, focusing on advanced text styling and a broader range of CSS properties.
+
+More Text Styles: I learned how to use more granular control over text presentation, including:
+
+Using the font-variant property, specifically font-variant: small-caps;.
+
+Controlling text overflow and wrapping with properties like white-space and text-overflow.
+
+Implementing custom fonts using the @font-face rule.
+
+More CSS Properties: I explored additional essential CSS properties that enhance layout and design capabilities:
+
+Deeper dive into CSS Box Model properties, focusing on how padding, border, and margin interact.
+
+Utilizing CSS variables (Custom Properties) for maintaining consistency and making global style changes easier. For example: body { --main-color: blue; } and using it via color: var(--main-color);.
+
+Understanding and applying different box-shadow effects for depth.
+
+NeetCode: Valid Palindrome (Algorithm Practice)
+I also tackled a fundamental algorithm problem from the NeetCode platform: Valid Palindrome.
+
+Problem: Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.
+
+Approach: The most efficient solution I practiced involved the Two-Pointer technique.
+
+Preprocessing: First, I focused on filtering the string to include only alphanumeric characters and converting it to a consistent case (e.g., lowercase).
+
+Two Pointers: I initialized a left pointer at the start and a right pointer at the end of the processed string.
+
+Iteration: The pointers moved inward (left++, right--) until they crossed. At each step, I compared the characters at both pointers. If the characters didn't match, the string was not a palindrome.
+
+Learning Outcome: This exercise reinforced the importance of string preprocessing and demonstrated the efficiency of the Two-Pointer pattern for sequence-based problems.
+
+Next Steps
+Continue the HTML and CSS course to cover Flexbox and Grid.
+
+Practice more string and array manipulation problems using the Two-Pointer technique.
