@@ -2575,3 +2575,50 @@ Next Steps
 Continue the HTML and CSS course to cover Flexbox and Grid.
 
 Practice more string and array manipulation problems using the Two-Pointer technique.
+
+
+## 2025/11/26 Night
+📚 Learning Log: Progress in the Intermediate HTML and CSS Course
+Intermediate HTML and CSS Course
+This week, we continued our study of the **Intermediate HTML and CSS Course**, particularly diving deeper into the area of ​​advanced CSS selectors.
+
+More CSS Properties
+Going further from last time, we learned about important properties that give you greater control over your web design.
+
+Advanced Properties: Continuing from last time, we learned how to apply various properties to achieve more granular control over layout and design.
+
+Practical Use: We gained a practical understanding of how combining properties can achieve complex layout requirements and interactive effects.
+
+Advanced Selectors
+We focused on more powerful selectors, essential for precisely targeting elements.
+
+Combinators:
+
+Descendant Selector ( ): Selects all elements that are descendants of an element.
+
+Child Selector (>): Selects only the direct children of an element.
+
+Adjacent sibling selector (+): Selects a single sibling element that immediately follows an element.
+
+General sibling selector (~): Selects all sibling elements following an element.
+
+We studied these selector combinations in detail, referring to MDN articles, to gain a deeper understanding of how to select specific elements in complex document structures.
+
+Pseudo-classes:
+
+Dynamic selectors that select elements based on user actions or element state.
+
+Examples: **:hover**, **:focus**, **:nth-child()**, **:first-child**, etc. We learned that they are powerful tools for selecting form states and specific items in lists.
+
+Pseudo-elements:
+
+Used to style specific parts of elements that don't exist in the DOM tree.
+
+Examples: **::before**, **::after** (to add content), **::first-line**, **::selection**, etc. We learned how to add decorative content and apply styles to specific parts of text.
+
+We've seen that mastering these advanced selectors will enable you to write more flexible and maintainable CSS without changing your HTML structure.
+
+Next Steps
+Continue the course and learn the full-scale layout modules: Flexbox and CSS Grid.
+
+Actively apply and solidify the combinators and pseudo-classes you've learned so far in real-world projects and coding practice.
