@@ -2622,3 +2622,49 @@ Next Steps
 Continue the course and learn the full-scale layout modules: Flexbox and CSS Grid.
 
 Actively apply and solidify the combinators and pseudo-classes you've learned so far in real-world projects and coding practice.
+
+
+
+## 2025/11/27 Morning
+💻 Learning Log: Intermediate HTML and CSS
+I've made good progress through the Intermediate HTML and CSS Course, supplemented by a coding challenge focusing on fundamental algorithms.
+
+🚀 Coding Challenge
+Platform: NeetCode
+
+Problem: Two Integer Sum II
+
+Focus: Practiced problem-solving and algorithm implementation (likely involving sorting or hash maps/pointers for efficient look-up).
+
+🎨 Intermediate HTML and CSS Course Topics
+I have completed the following major sections of the course:
+
+1. More CSS Properties
+This section expanded my understanding of essential layout and styling properties.
+
+Box Model Review: Reinforced the concepts of content, padding, border, and margin.
+
+Backgrounds: Learned about advanced background properties, including using background-image, background-repeat, and background-size.
+
+Text and Fonts: Explored deeper controls over typography, such as using font-weight, font-style, and implementing custom fonts via @font-face or external libraries.
+
+Visibility and Opacity: Mastered using the opacity property and the distinction between display: none; and visibility: hidden;.
+
+2. Advanced Selectors
+This module focused on writing more specific, efficient, and maintainable CSS by utilizing a wider range of selectors.
+
+Attribute Selectors: Learned how to select elements based on the presence or value of an attribute (e.g., [type="text"] or [data-id]).
+
+Pseudo-classes: Studied selectors that target elements based on their state or position (e.g., :hover, :nth-child(), :focus, :first-of-type).
+
+Pseudo-elements: Gained experience with selectors that style specific parts of an element (e.g., ::before and ::after for content generation).
+
+Combinators: Practiced using the various combinators:
+
+Descendant Selector (space)
+
+Child Selector (>)
+
+Adjacent Sibling Selector (+)
+
+General Sibling Selector (~)
