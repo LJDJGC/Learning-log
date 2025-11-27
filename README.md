@@ -2668,3 +2668,47 @@ Child Selector (>)
 Adjacent Sibling Selector (+)
 
 General Sibling Selector (~)
+
+
+## 2025/11/27 Night
+thank you for your hard work! It's hard to concentrate when you're tired.
+
+Based on what you have learned, create a README for the Intermediate HTML and CSS Course that focuses on Advanced Selectors.
+
+This README is a concise summary of the course objectives, what you will learn, and who it is intended for.
+
+📚 Intermediate HTML and CSS Course: Advanced Selectors
+💡Course overview
+This course is designed for those with basic knowledge of HTML and CSS to learn more advanced and efficient styling techniques. In particular, we will focus on the detailed use of CSS selectors and develop the ability to write accurate and maintainable CSS even for web pages with complex DOM structures.
+
+🚀 What you can learn (Advanced Selectors)
+By completing this course, you will understand and be able to use the following advanced selectors in practice:
+
+Attribute Selectors: A method of selecting elements based on specific attributes or values ​​of attributes.
+
+Example: [type="text"], [class^="btn-"]
+
+Pseudo-classes: A method of selecting elements based on their state or position in the DOM.
+
+Examples: :nth-child(), :first-of-type, :hover, :focus
+
+Pseudo-elements: A way to style parts of an element (first character, first line, surrounding content, etc.).
+
+Examples: ::before, ::after, ::first-letter
+
+Combinators: A method of selecting elements using relationships between elements (parent-child, siblings, etc.).
+
+Example:
+
+child selector (>)
+
+Adjacent sibling selector (+)
+
+General sibling selector (~)
+
+🎯 Target audience
+Those who understand the basic syntax of HTML and CSS (elements, classes, ID selectors, etc.).
+
+Those who want to acquire more sophisticated CSS writing skills that target many elements with less code.
+
+Anyone who wants to improve the maintainability and efficiency of their website.
