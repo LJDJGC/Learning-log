@@ -2759,3 +2759,37 @@ Familiarity with HTML and CSS (element, .class, #id selectors).
 Those who want to accurately style more complex layouts with less code.
 
 Those who want to improve the reusability and maintainability of their website code.
+
+
+## 2025/12/01 Morning
+📅 Learning Log: December 1, 2025
+💻 Computer Science & Algorithms
+Platform: NeetCode
+
+Topic: 3Sum (LeetCode problem)
+
+Notes: Continued practice with Two Pointers technique within a larger problem context. The key challenge was efficiently handling duplicate triplets and establishing the initial sort to enable the two-pointer approach.
+
+🌐 Web Development
+Platform: The Odin Project
+
+Course: Intermediate HTML and CSS Course
+
+Topics Covered:
+
+Advanced Selectors: Focused on mastering more specific and powerful CSS selectors, including attribute selectors ([attr], [attr="value"]), pseudo-classes (:nth-child(), :first-of-type, :not()), and pseudo-elements (::before, ::after).
+
+Intermediate HTML and CSS: Deepened understanding of layout properties and semantic HTML structure.
+
+🧠 Reflection & Strategy
+I've been encountering difficulty in quickly moving through new material, especially in areas that require deeper understanding before they "click."
+
+Observation: Areas requiring time for initial comprehension (like complex algorithms or advanced CSS rules) are slowing down my pace.
+
+Challenge: Balancing the urge to read quickly and rely on active recall later with the need to fully grasp the current concept to proceed effectively.
+
+Potential Strategy: For difficult topics, I will try a "skim-then-deep-dive" approach:
+
+Skim: Read through once to get the high-level overview.
+
+Immediate Deep-Dive: Focus on a small, specific segment (e.g., one selector type, one part of the 3Sum solution) and implement a small example or write down the logic immediately to ensure initial comprehension before moving on. This blends initial reading with immediate practical application/recall.
