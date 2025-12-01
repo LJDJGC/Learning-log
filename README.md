@@ -2799,3 +2799,31 @@ Immediate Deep-Dive: Focus on a small, specific segment (e.g., one selector type
 ## 2025/12/01 Night
 
 📚 Learning Log: Advanced Selectors in CSSProject/Course Title: Intermediate HTML and CSS Course - CSS DinerDate: December 1, 2025Topic Covered: Advanced CSS SelectorsOverview & GoalThis session focused on practicing advanced CSS selectors by working through the levels of CSS Diner. The primary goal was to gain a deeper understanding and practical application of various selector types, including:Attribute selectors (e.g., $[attr], $[attr=value], $[attr^=value] )Pseudo-classes (e.g., $:nth-child(), $:only-of-type, $:not() )Combinators (e.g., General Sibling Combinator $`\sim`$, Adjacent Sibling Combinator $`+`$ )Key Takeaways & ChallengesStruggles with Retention: I found it challenging to retain the specific syntax and behavior of all the advanced selectors. While I could solve the puzzles with the help of references, the knowledge is not yet solidified in my long-term memory.Example of a challenging concept: Distinguishing between $`:nth-child()`$ and $`:nth-of-type()`$.Need for Active Recall: I recognize that passive learning isn't sufficient for these complex rules. Active recall is essential for true retention and fluency.The Scope of Programming: I'm struggling with how to apply effective active recall techniques to the vast and ever-expanding scope of programming knowledge. The sheer volume of concepts makes focused review difficult.Next Steps for RetentionFocused Review: Create flashcards (or use a similar spaced repetition system) specifically for the selectors covered in CSS Diner to enforce active recall.Implementation: Immediately apply these selectors in a small, practical personal project to move the knowledge from theory to application.
+
+## 2025/12/02 Morning
+📖 Learning Log: Advanced Selectors
+Course & Topic
+Course: Intermediate HTML and CSS Course
+
+Platform: CSS Diner
+
+Topic: Advanced Selectors
+
+Progress & Current Challenge
+I've been working through the CSS Diner exercises, focusing on Advanced Selectors.
+
+My current challenge is with Attribute Selectors.
+
+The Goal: To select all elements that possess a specific attribute.
+
+An attribute is written inside the element's start tag (e.g., <span attribute="value">). Attributes don't always need to have a value; they can also be blank.
+
+Attribute Selector Syntax
+[attribute]
+
+Examples
+a[href] selects all <a> elements that have an href="anything" attribute.
+
+[type] selects all elements that have a type="anything" attribute.
+
+I'm currently struggling to grasp the nuances and proper application of this type of selector in the exercises.
