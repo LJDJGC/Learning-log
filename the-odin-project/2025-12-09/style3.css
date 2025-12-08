@@ -1,0 +1,61 @@
+a[target] {
+    font-size: 50px;
+}
+
+a[href="http://google.com/"] {
+    font-size: 100px;
+}
+
+a[href*="login"] {
+    font-size: 150px;
+}
+
+a[href^="https://"] {
+    font-size: 150px
+}
+
+a[href$=".pdf"] {
+    font-size: 50px;
+}
+
+a[rel~="tag"] {
+    font-size: 100px;
+}
+
+a[lang|="en"] {
+    font-size: 45px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+  color: #0087cc;
+  padding-left: 22px;
+  text-decoration: none;
+}
+a:hover {
+  color: #ff7b29;
+}
+a[href$=".pdf"] {
+  background-image: url("images/pdf.png");
+}
+a[href$=".doc"] {
+  background-image: url("images/doc.png");
+}
+a[href$=".jpg"] {
+  background-image: url("images/image.png");
+}
+a[href$=".mp3"] {
+  background-image: url("images/audio.png");
+}
+a[href$=".mp4"] {
+  background-image: url("images/video.png");
+}
+
+a:link {...}
+a:visited {...}
