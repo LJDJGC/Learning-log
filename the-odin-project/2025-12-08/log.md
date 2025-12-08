@@ -1,0 +1,10 @@
+📝 Today I Learned (TIL)
+Date: December 9, 2025 (JST)
+Topic: HTML & CSS - Advanced Selectors
+Source: The Odin Project - Advanced Selectors Intermediate HTML and CSS Course (Specifically, Shay Howe's "Advanced HTML & CSS" - Complex Selectors)
+Progress Made:Completed the section on Sibling Selectors, up to and including the General Sibling Selector.Link Covered: https://learn.shayhowe.com/advanced-html-css/complex-selectors/
+Key Concepts & Learning Points:
+1. Sibling SelectorsSibling selectors target elements that share the same parent element (i.e., elements are siblings). They allow for styling based on the position or relation of elements that appear after a specific element in the source order.
+2. Adjacent Sibling Selector ($E_1 + E_2$)Syntax: $E_1 + E_2$Function: Selects the first element ($E_2$) that is immediately preceded by element $E_1$.Example: h2 + p selects the first <p> element that directly follows an <h2> element.
+3. General Sibling Selector ($E_1 \sim E_2$)Syntax: $E_1 \sim E_2$ (The tilde $\sim$ is the key.)Function: Selects all elements ($E_2$) that are preceded by element $E_1$, regardless of whether they are immediately adjacent.Example: h2 ~ p selects all subsequent <p> elements within the same parent as the <h2>, allowing you to style an entire sequence of elements following a specific element.
+Goals & Reflection:Current Focus: Mastering CSS Selectors is crucial for writing efficient and maintainable stylesheets. The $\sim$ selector, in particular, will be very useful for creating more dynamic layouts without relying on class names for every element.Plan: Continue with the rest of the Complex Selectors section tomorrow.Long-Term Goal: Daily practice and incremental progress are the keys to successfully transitioning into a developer role at a self-development company (自社開発企業)! Keep pushing! 💪

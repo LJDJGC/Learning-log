@@ -1,0 +1,23 @@
+h1 {
+    font-size: 2rem;
+}
+
+.tagline {
+    font-size: 16px;
+}
+
+#intro {
+    font-size: large;
+}
+
+article h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+article > p {
+    font-size: 150px;
+}
+
+h2 ~ p {
+    font-size: 50px;
+}
