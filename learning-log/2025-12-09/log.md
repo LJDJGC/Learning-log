@@ -1,0 +1,6 @@
+📝 Today I Learned (TIL) Log
+Here is your TIL log rewritten in English:
+Morning Coding and Self-DoubtThis morning, I tackled the NeetCode problem "Container With Most Water." I prioritized understanding the concept and read through the explanation. However, since I am solving it in JavaScript rather than Python (which the explanation often uses), I feel like I don't fully grasp the underlying mechanics of $Math.min$ and $Math.max$ in this context yet.
+Web Development Progress BlockI continued my learning with The Odin Project, but I only managed to progress to the same point as yesterday:https://learn.shayhowe.com/advanced-html-css/complex-selectors/I feel a strong desire to speed up and move on to the next topic. I plan to explore strategies for accelerating my pace on this topic again today.
+Reflection on Learning SpeedStarting the TIL practice has clearly slowed down my overall learning pace, but I believe that leveraging Codepen has helped me slightly improve my learning efficiency.
+Future Outlook & GoalI will continue to identify and implement improvements to gain the technical skills necessary for a career transition. My ultimate goal is to become an engineer at an in-house development company, transitioning from self-taught and inexperienced to a successful engineer!

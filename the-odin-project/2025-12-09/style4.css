@@ -1,0 +1,19 @@
+li:first-child {
+    font-size: 25px;
+}
+li:last-child {
+    font-size: 50px;
+}
+div:only-child {
+    font-size: 75px;
+}
+
+p:first-of-type {
+    font-size: 22px;
+}
+p:last-of-type {
+    font-size: 55px;
+}
+img:only-of-type {
+    image-rendering: auto;
+}
