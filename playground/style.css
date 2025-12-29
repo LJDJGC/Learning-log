@@ -1,18 +1,67 @@
-@property --text-color {
-  syntax: "<color>";
-  inherits: false;
-  initial-value: teal;
+.breakpoints {
+  --base_size: 100%;
+
+  --breakpoint_wide: 1000px;
+  --breakpoint_medium: 500px;
+
+  --length_4_small: calc((100% / 1) - 24px);
+  --length_4_medium: calc((100% / 3) - 24px);
+  --length_4_wide: calc((100% / 4) - 24px);
 }
 
-:root {
-  --text-color: 16px;
+.container {
+  --very_big_int: 9999;
+
+  --is_wide: clamp(0px, (var(--base_size) - var(--breakpoint_wide)), 1px);
+  --is_medium: calc(
+    clamp(0px, (var(--base_size) - var(--breakpoint_medium)), 1px) -
+      var(--is_wide)
+  );
+  --is_small: calc(1px - (var(--is_medium) + var(--is_wide)));
+
+  --dyn_length: calc(
+    min(var(--is_wide) * var(--very_big_int), var(--length_4_wide)) +
+      min(var(--is_medium) * var(--very_big_int), var(--length_4_medium)) +
+      min(var(--is_small) * var(--very_big_int), var(--length_4_small))
+  );
 }
 
-p {
-  font-weight: bold;
-  color: blue;
+.container > .item {
+  background-color: white;
+  display: inline-block;
+  vertical-align: top;
+  height: 200px;
+  width: var(--dyn_length);
+  border-radius: 5px;
+  margin: 10px;
 }
 
-p {
-  color: var(--text-color);
+.size {
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: top;
+  overflow: hidden;
+  padding: 0px;
+}
+
+.show_small {
+  width: calc(var(--is_small) * 100);
+}
+.show_medium {
+  width: calc(var(--is_medium) * 100);
+}
+.show_wide {
+  width: calc(var(--is_wide) * 100);
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #ccc;
+  margin: 1rem;
+  font: 100% system-ui;
+}
+hr {
+  border: 0;
 }
